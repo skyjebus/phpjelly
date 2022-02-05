@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+https://bananas.one/sitemap.xml
