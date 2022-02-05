@@ -68,11 +68,11 @@ Hello  World
     echo '<img class="w-32 h-48 object-cover object-center rounded-lg
     bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
     transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-375-2x.jpg 750w,' .
-    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-480-2x.jpg 960w,' .
-    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-768-2x.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-1024-2x.jpgskew-y-12 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400-2x.jpg 2800w,' .
-    $imgLocation . $imgName . '-2000.jpg 2000w,' . $imgLocation . $imgName . '-2000-2x.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
+    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '768.jpg 750w,' .
+    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
+    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
+    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
+    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
 }
 image1(); ?>
 <?php function image2() {
@@ -80,11 +80,11 @@ image1(); ?>
     echo '<img class="w-32 h-48 object-cover object-center rounded-lg
     bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
     transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-375-2x.jpg 750w,' .
-    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-480-2x.jpg 960w,' .
-    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-768-2x.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-1024-2x.jpgskew-y-12 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400-2x.jpg 2800w,' .
-    $imgLocation . $imgName . '-2000.jpg 2000w,' . $imgLocation . $imgName . '-2000-2x.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
+    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '768.jpg 750w,' .
+    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
+    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
+    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
+    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
 }
 image2(); ?>
 </div>
