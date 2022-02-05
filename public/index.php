@@ -29,10 +29,10 @@ bg-img-1 bg-fixed bg-cover bg-center">
 
 <div class="flex-col">
   <div class="flex-col">
-<h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl">
+<h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
 Hello  World
 </span></h1>
-<p class="text-zinc-200 pb-4 text-lg font-semibold">Lorem ipsum dolor sit amet, ut pri dicam detraxit, an probo adipiscing sed. Ullum nusquam pro at. Ea usu esse mundi. Congue audire probatus quo in. Ei liber vocent quaeque mea, an labitur liberavisse eum.</p>
+<p class="text-zinc-200 pb-4 text-lg font-semibold text-shadow-lg">Lorem ipsum dolor sit amet, ut pri dicam detraxit, an probo adipiscing sed. Ullum nusquam pro at. Ea usu esse mundi. Congue audire probatus quo in. Ei liber vocent quaeque mea, an labitur liberavisse eum.</p>
 </div>
 <div class="flex"></div>
 <a href="#">
