@@ -4,7 +4,7 @@
 <div class="bg-neutral-400 dark:bg-neutral-900 hidden md:block">
 <nav class="flex max-w-5xl mx-auto px-4 py-1 justify-evenly w-full">
   <!-- left group -->
-  <div class="flex justify-evenly my-auto">
+  <div class="flex justify-evenly my-auto text-sm">
   <a href="tel:<?php echo $phone; ?>"><div class="mr-auto flex justify-evenly">
   <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="phone-square-alt" class="svg-inline--fa fa-phone-square-alt fa-w-14 h-5 w-5 my-auto" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M344.73 309l-56-24a14.46 14.46 0 0 0-4.73-1 13.61 13.61 0 0 0-9.29 4.4l-24.8 30.31a185.51 185.51 0 0 1-88.62-88.62l30.31-24.8A13.61 13.61 0 0 0 196 196a14.2 14.2 0 0 0-1-4.73l-24-56a13 13 0 0 0-11-7.27 14.51 14.51 0 0 0-2.7.31l-52 12A12.57 12.57 0 0 0 96 152c0 128.23 104 232 232 232a12.57 12.57 0 0 0 11.69-9.3l12-52a14.51 14.51 0 0 0 .31-2.7 13 13 0 0 0-7.27-11zM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm0 394a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h340a6 6 0 0 1 6 6z"></path></svg>
   &nbsp;<?php echo $phone; ?>
@@ -17,12 +17,12 @@
   <span class="text-xs text-slate-800 dark:text-slate-200">Theme&nbsp;</span>
   <div class="relative">
   <input type="checkbox" id="toggle" class="sr-only darkmode switch" title="darkmode switch" onclick="save();">
-  <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
-  <div id="dot" class="dot absolute left-1 top-1 w-6 h-6 rounded-full bg-white flex justify-center mx-auto">
+  <div class="block bg-gray-600 w-12 h-7 rounded-full"></div>
+  <div id="dot" class="dot absolute left-1 top-1 w-5 h-5 rounded-full bg-white flex justify-center mx-auto">
       <div class="flex-col justify-center my-auto">
       <svg id="moon" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon-stars" class="svg-inline--fa fa-moon-stars h-4 w-5 hidden" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M332.2 426.4c-93.1 17.7-178.5-53.7-178.5-147.7 0-54.2 29-104 76.1-130.8 7.3-4.1 5.4-15.1-2.8-16.7C108.7 109.4 0 200 0 320c0 106 85.8 192 191.8 192 59.2 0 113.2-26.9 149-71.1 5.3-6.5-.5-16.1-8.6-14.5zM304 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zm154.7 85.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208l-53.3-26.7z"></path></svg>
       <!-- <svg id="sun" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" class="svg-inline--fa fa-sun h-4 w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path></svg> -->
-        <svg xmlns="http://www.w3.org/2000/svg" id="sun" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" id="sun" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
       </div>
@@ -55,7 +55,7 @@
 
 <div class="hidden md:flex items-center space-x-3">
 
-<button type="button" class="inline-flex items-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
+<button type="button" class="scale-100 hover:scale-105 transition-transform duration-300 hover:drop-shadow-lg inline-flex items-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
   Button text
   <!-- Heroicon name: solid/mail -->
   <svg class="ml-3 -mr-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
