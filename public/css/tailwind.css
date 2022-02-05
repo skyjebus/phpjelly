@@ -7,7 +7,7 @@
 and (min-width : 1px)
 and (max-width : 320px) {
     .bg-img-1 {
-        background-image: url("../images/ep-320.jpg");
+        background-image: url("../images/boston-320.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-320.jpg");
@@ -31,7 +31,7 @@ and (max-width : 320px) {
 and (min-width : 321px)
 and (max-width : 375px) {
     .bg-img-1 {
-        background-image: url("../images/ep-375.jpg");
+        background-image: url("../images/boston-375.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-375.jpg");
@@ -55,7 +55,7 @@ and (max-width : 375px) {
 and (min-width : 376px)
 and (max-width : 767px) {
     .bg-img-1 {
-        background-image: url("../images/ep-480.jpg");
+        background-image: url("../images/boston-480.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-480.jpg");
@@ -79,7 +79,7 @@ and (max-width : 767px) {
 and (min-width : 768px)
 and (max-width : 1023px) {
     .bg-img-1 {
-        background-image: url("../images/ep-768.jpg");
+        background-image: url("../images/boston-768.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-768.jpg");
@@ -103,7 +103,7 @@ and (max-width : 1023px) {
 and (min-width : 1024px)
 and (max-width : 1279px) {
     .bg-img-1 {
-        background-image: url("../images/ep-1024.jpg");
+        background-image: url("../images/boston-1024.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-1024.jpg");
@@ -127,7 +127,7 @@ and (max-width : 1279px) {
 and (min-width : 1280px)
 and (max-width : 1823px) {
     .bg-img-1 {
-        background-image: url("../images/ep-1400.jpg");
+        background-image: url("../images/boston-1400.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-1400.jpg");
@@ -150,7 +150,7 @@ and (max-width : 1823px) {
 @media only screen
 and (min-width : 1824px) {
     .bg-img-1 {
-        background-image: url("../images/ep-2000.jpg");
+        background-image: url("../images/boston-2000.jpg");
     }
     .bg-img-2 {
         background-image: url("../images/bg-img2-2000.jpg");
