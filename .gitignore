@@ -19,6 +19,7 @@ pids
 *.pid.lock
 *.lock
 .DS_Store
+*.DS_Store
 
 # CUSTOM
 *.code-workspace
