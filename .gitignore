@@ -20,7 +20,8 @@ pids
 *.lock
 .DS_Store
 *.DS_Store
-
+.dccache
+*.dccache
 # CUSTOM
 *.code-workspace
 

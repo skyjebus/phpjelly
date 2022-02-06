@@ -26,6 +26,7 @@ function save2(){
 function load(){
   var checked = JSON.parse(localStorage.getItem('toggle'));
   document.getElementById("toggle").checked = checked;
+  // deepcode ignore RedeclarationVars: <please specify a reason of ignoring this>
   var checked = JSON.parse(localStorage.getItem('toggle2'));
   document.getElementById("toggle2").checked = checked;
 }
@@ -93,11 +94,12 @@ toggleDarkMode();
 toggle.addEventListener("click",toggleDarkMode);
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms))
 }
+
 sleep(200).then(() => {
-  document.getElementById("dot").classList.add('transition')
-  document.getElementById("dot2").classList.add('transition')
+document.getElementById("dot").classList.add('transition');
+document.getElementById("dot2").classList.add('transition');
 });
 
 // Navigation links javascript + active link color and border-bottom
@@ -113,12 +115,12 @@ window.onload = function() {
       }
   }
   var all_links2 = document.getElementById("navigation-ol-mobile").getElementsByTagName("a"),
-  b=0, len=all_links2.length,
-  full_path = location.href.split('#')[0]; //Ignore hashes?
+  b=0, len2=all_links2.length,
+  full_path2 = location.href.split('#')[0]; //Ignore hashes?
 
   // Loop through each link.
-  for(; b<len; b++) {
-    if(all_links2[b].href.split("#")[0] == full_path) {
+  for(; b<len2; b++) {
+    if(all_links2[b].href.split("#")[0] == full_path2) {
         all_links2[b].className += " active";
     }
   }
@@ -152,7 +154,7 @@ if (page=="")   //defaults to index.hmtl if no name is found from the location.h
   page="../css/styles.css" ; 
 
 console.log(" Current page: "+ page );
-var url="/functions/watcher-public.php?file="+page ; //change this to whatever you want it to be
+var url="/functions/watcher.php?file="+page ; //change this to whatever you want it to be
 var poll_interval=2500; //every x seconds poll for file changes. Ajust to suit your requirements
 
 setInterval( function() {

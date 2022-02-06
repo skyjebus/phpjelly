@@ -1,6 +1,6 @@
 <?php
 $docRoot = getenv("DOCUMENT_ROOT");
-require $docRoot."/functions/script-header.php"; ?>
+require $docRoot."/script-header.php"; ?>
 <title>Home | <?php echo $name ?></title>
 <link rel="canonical" href="<?php echo $canonicalFilename; ?>">
 <style>
@@ -10,7 +10,7 @@ require $docRoot."/functions/script-header.php"; ?>
 
 </script>
 </head>
-<?php require $docRoot."/functions/navigation.php"; ?>
+<?php require $docRoot."/header.php"; ?>
 <main id="main" role="main" class="flex flex-col w-full justify-center">
 <!--<pre class="overflow-y-hidden">
 <code>// Copy &amp; paste php / html ifrastructure template
@@ -72,7 +72,7 @@ Our product is service.
     'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
     $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
     $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
+    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-4000.jpg 2800w,' .
     $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
 }
 image1(); ?>
@@ -145,4 +145,4 @@ data-src="../images/fv-320.jpg" srcset="../images/fv-320.jpg 320w,
 </div>
 
 </main>
-<? require $docRoot."/functions/footer.php"; ?>
+<? require $docRoot."/footer.php"; ?>
