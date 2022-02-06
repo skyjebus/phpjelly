@@ -21,7 +21,7 @@ require $docRoot."/functions/script-header.php"; ?>
 
 </pre>
 </code>-->
-
+<a href="/test2/">test2</a>
 <div class="flex-col w-full h-fit items-center
 bg-img-1 bg-fixed bg-cover bg-center">
 <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
@@ -70,7 +70,7 @@ Our product is service.
     echo '<img class="w-32 h-48 object-cover object-center rounded-lg
     bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
     transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '768.jpg 750w,' .
+    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
     $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
     $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
     $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
@@ -82,7 +82,7 @@ image1(); ?>
     echo '<img class="w-32 h-48 object-cover object-center rounded-lg
     bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
     transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '768.jpg 750w,' .
+    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
     $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
     $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
     $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
