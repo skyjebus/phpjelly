@@ -22,14 +22,6 @@ require $docRoot."/functions/script-header.php"; ?>
 </pre>
 </code>-->
 
-<?php
-require $docRoot."/functions/sitemap-generator.php";
-// Create an object of the generator class passing the config file
-$smg = new SitemapGenerator(require($docRoot."/functions/sitemap-config.php"));
-// Run the generator
-$smg->GenerateSitemap();
-?>
-
 <div class="flex-col w-full h-fit items-center
 bg-img-1 bg-fixed bg-cover bg-center">
 <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
