@@ -14,7 +14,7 @@ $referrer=isset($_SERVER['HTTP_REFERER'])? $_SERVER['HTTP_REFERER'] : './public/
 $filename = isset($_REQUEST['file'])? trim($_REQUEST['file'])  :$referrer ; //assume that the calling web-
 
 if (@file_exists($filename))
-   $md5_file=md5_file($filename);	//let's get the MD5 file info
+   $md5_file=sha1_file($filename);	//let's get the MD5 file info
 else
 die(json_encode("file [$filename] MISSING, filename does not exist. Check name and path ."));	
 
