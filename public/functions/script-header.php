@@ -25,13 +25,13 @@ $GLOBALS['$imgLocation2'] = '../images/';
 
 $domain = siteURL();
 $name = 'Tailwind';
-$address = '285 Hancock St';
+$address = '1313 Mockingbird Ln.';
 // address line two:
-$al2 = '#1430';
+$al2 = '#1';
 $city = 'Boston';
 $state = 'MA';
-$zip = '02171';
-$phone = '916-934-0452';
+$zip = '12345';
+$phone = '555-867-5309';
 $hours = 'M-F 9:00am - 5:00pm';
 $gmb = 'test1';
 // socail media:

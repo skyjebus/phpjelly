@@ -22,39 +22,41 @@ require $docRoot."/functions/script-header.php"; ?>
 </pre>
 </code>-->
 
-<div class="flex-col w-full screen-50 items-center
+<div class="flex-col w-full h-fit items-center
 bg-img-1 bg-fixed bg-cover bg-center">
 <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
 <div class="flex mx-auto max-w-5xl px-3 h-full items-center">
 
-<div class="flex-col">
+<div class="flex-col py-12 md:py-32">
   <div class="flex-col">
 <h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
-Hello  World
+Our product is service.
 </span></h1>
-<p class="text-zinc-200 pb-4 text-lg font-semibold text-shadow-lg">Lorem ipsum dolor sit amet, ut pri dicam detraxit, an probo adipiscing sed. Ullum nusquam pro at. Ea usu esse mundi. Congue audire probatus quo in. Ei liber vocent quaeque mea, an labitur liberavisse eum.</p>
+<p class="text-zinc-100 pb-6 text-base md:text-lg font-semibold text-shadow-lg">Target rich environment we need to future-proof this granularity, or we need to button up our approach and it's about managing expectations. Can we parallel path productize idea shower. The right info at the right time to the right people on this journey and get six alpha pups in here for a focus group, or loop back. Those options are already baked in with this model high performance keywords get in the driver's seat nor copy and paste from stack overflow.</p>
 </div>
 <div class="flex"></div>
+<div class="space-x-0 md:space-x-2">
 <a href="#">
-<button type="button" class="scale-100 hover:scale-105 hover:drop-shadow-lg transition-transform duration-300 inline-flex items-center px-3 py-2 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
+<button type="button" class="my-2 md:my-0 scale-100 hover:scale-105 drop-shadow-sm hover:drop-shadow-lg transition-transform duration-300 inline-flex items-center px-3 py-2 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
   <!-- Heroicon name: solid/mail -->
   <svg class="-ml-0.5 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
   </svg>
-  Button text
+  First Button
 </button>
 </a>
 <a href="#">
-<button type="button" class="scale-100 hover:scale-105 transition-transform duration-300 hover:drop-shadow-lg inline-flex items-center px-3 py-2 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
+<button type="button" class="my-2 md:my-0 scale-100 hover:scale-105 transition-transform duration-300 drop-shadow-sm hover:drop-shadow-lg inline-flex items-center px-3 py-2 shadow-sm text-base font-medium rounded-md text-emerald-800 hover:text-emerald-900 border border-emerald-500 dark:border-emerald-600 dark:text-emerald-100 bg-gradient-to-b from-emerald-400 via-emerald-300 to-emerald-400 hover:from-emerald-300 hover:via-emerald-200 hover:to-emerald-300 dark:hover:bg-emerald-600 hover:border-emerald-600 dark:hover:border-emerald-200 dark:from-emerald-700 dark:via-emerald-600 dark:to-emerald-700 dark:hover:from-emerald-800 dark:hover:via-emerald-700 dark:hover:to-emerald-800 focus:outline-none focus:ring focus:ring-emerald-500">
   <!-- Heroicon name: solid/mail -->
   <svg class="-ml-0.5 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
   </svg>
-  Button text
+  Second Button
 </button>
 </a>
+</div>
 </div>
 
 </div>
