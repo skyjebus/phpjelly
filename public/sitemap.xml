@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- 3 total pages-->
+  <!-- 1 total pages-->
   <!-- PHP-sitemap-generator by https://github.com/tristangoossens -->
   <url>
     <loc>https://bananas.one/</loc>
-    <lastmod>2022-02-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://bananas.one/live-dev-page/</loc>
-    <lastmod>2022-02-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
-  </url>
-  <url>
-    <loc>https://bananas.one/default-page-template/</loc>
     <lastmod>2022-02-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1</priority>
