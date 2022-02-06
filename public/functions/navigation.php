@@ -153,7 +153,7 @@ stroke="currentColor"
 <li class="navigation-links-mobile"><a href="/" class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a></li>
 <li class="navigation-links-mobile"><a href="/live-dev-page/" class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">Live Dev Page</a></li>
 <li class="navigation-links-mobile"><a href="/default-page-template/" class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">Default Page Template</a></li>
-<li class="navigation-links-mobile"><a href="/test/" class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">Test</a></li>
+<li class="navigation-links-mobile"><a href="/test2/" class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">Test</a></li>
 </ol>
 <div class="flex justify-center mx-auto text-zinc-400 dark:text-yellow-100 border-t border-gray-300 dark:border-gray-500">
 <label for="toggle2" id="checkbox2" class="flex items-center justify-start cursor-pointer px-2 py-4"><span class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span> 
