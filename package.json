@@ -6,7 +6,7 @@
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css",
     "watch": "watch 'yarn run build' ./public & docker-compose up",
     "images": "cd ./public/images/src; ./img-magic.sh; cd ../../..",
-    "sitemap": "yarn sitemap-generator -f ./public/sitemap.xml https://bananas.one"
+    "sitemap": "yarn sitemap-generator -f ./public/sitemap.xml https://bananas.one & generate-robot -r"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
     "yarn-audit-fix": "^9.0.10"
   },
   "dependencies": {
+    "@ruhith/generate-robots-text": "^1.0.1",
     "sitemap-generator-cli": "^7.5.0",
     "yarn": "^1.22.17"
   }
