@@ -21,7 +21,6 @@ require $docRoot."/functions/script-header.php"; ?>
 
 </pre>
 </code>-->
-<a href="/test2/">test2</a>
 <div class="flex-col w-full h-fit items-center
 bg-img-1 bg-fixed bg-cover bg-center">
 <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
