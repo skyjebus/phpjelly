@@ -5,7 +5,9 @@
   "scripts": {
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css --verbose",
     "watch": "watch 'yarn run build' ./public & docker-compose up -d & yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://bananas.one &> /dev/null",
-    "images": "cp ./img-magic.sh ./public/images/src; cd ./public/images/src; ./img-magic.sh; rm ./img-magic.sh; cd ../../.."
+    "images": "cp ./img-magic.sh ./public/images/src; cd ./public/images/src; ./img-magic.sh; rm ./img-magic.sh; cd ../../..",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,8 @@
   "dependencies": {
     "@ruhith/generate-robots-text": "^1.0.1",
     "sitemap-generator-cli": "^7.5.0",
-    "yarn": "^1.22.17"
-  }
+    "yarn": "^1.22.17",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
