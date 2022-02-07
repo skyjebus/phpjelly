@@ -5,7 +5,7 @@
   "scripts": {
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css --verbose",
     "watch": "watch 'yarn run build' ./public & docker-compose up -d & yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://bananas.one &> /dev/null",
-    "images": "cp ./img-magic.sh ./public/images/src; cd ./public/images/src; ./img-magic.sh; rm ./img-magic.sh; cd ../../..",
+    "images": "cp ./img-magic.sh ./public/images/src; cd ./public/images/src; ./img-magic.sh; cd ../../..; rm ./public/images/src/img-magic.sh;",
     "prepublish": "npm run snyk-protect",
     "snyk-protect": "snyk-protect"
   },
