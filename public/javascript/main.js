@@ -155,7 +155,7 @@ if (page=="")   //defaults to index.hmtl if no name is found from the location.h
   page="../css/styles.css" ; 
 
 console.log(" Current page: "+ page );
-var url="/functions/watcher.php?file="+page ; //change this to whatever you want it to be
+var url="/watcher.php?file="+page ; //change this to whatever you want it to be
 var poll_interval=2500; //every x seconds poll for file changes. Ajust to suit your requirements
 
 setInterval( function() {
