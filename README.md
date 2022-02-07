@@ -126,7 +126,7 @@ In the project directory, you can run:
 
 - [Github Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
 - [Homepage](https://fuelviews/phpjelly "PHP Jelly Stack Website")
-- [Live Preview](<Homepage url> "Live View")
+- [Live Preview](https://heroku-phpjelly.herokuapp.com/ "Live View")
 
 ## 🤝 Support
 

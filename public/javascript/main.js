@@ -152,7 +152,7 @@ if (hotReload === "true") {
 
 var page =location.href.split("/").slice(-1); 
 if (page=="")   //defaults to index.hmtl if no name is found from the location.href
-  page="../css/styles.css" ; 
+  page="./css/styles.css" ; 
 
 console.log(" Current page: "+ page );
 var url="/watcher.php?file="+page ; //change this to whatever you want it to be
@@ -193,7 +193,7 @@ setInterval( function() {
 , poll_interval);
 
 } else {
-  console.log("fail1")
+  console.log("failed live reload")
 }
 
 
