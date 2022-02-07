@@ -92,8 +92,8 @@ In the project directory, you can run:
 - Tailwind
 - PostCSS
 - PHP 8.1
-- Nodejs
 - Docker
+- Nodejs
 - HTML
 - NPM
 - Snyk
@@ -122,7 +122,7 @@ In the project directory, you can run:
 
 ## Links
 
-- [Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
+- [Github Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
 - [Homepage](https://fuelviews/phpjelly "PHP Jelly Stack Website")
 - [Live Preview](<Homepage url> "Live View")
 
