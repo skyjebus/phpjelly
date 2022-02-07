@@ -1,6 +1,8 @@
 # PHP Jelly Stack
 
-## Tempalate Previews
+<description>Description</description>
+
+## Template Previews
 
 ### Large Screen Preview <br>
    ![Home Page](.github/images/screen-lg.jpg "Home Page")
@@ -11,9 +13,9 @@
 ### Mobile Screen Prewview <br>
    ![Home Page](.github/images/screen-sm.jpg "Home Page")
 
-## Setup & Installation
+## Getting Started
 
-### Linux
+### Install on Linux
 
  - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
@@ -23,7 +25,7 @@
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
 
-### MacOS
+### Install on MacOS
 
  - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
@@ -33,10 +35,10 @@
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
 
-### Windows
+### Install on Windows
 
 #### Step One
- - Install Docker Desktop and enable Docker Compose
+ - Install Docker Desktop and enable [Docker Compose + WSL Backend]("https://docs.docker.com/desktop/windows/wsl/#:~:text=Start%20Docker%20Desktop%20from%20the,will%20be%20enabled%20by%20default.")
  - Install VS Code, install All "Remote Development" extentions, install All "WSL" and "Remote - WSL" extentions, install "Docker" extentsion
 
 #### Step Two
