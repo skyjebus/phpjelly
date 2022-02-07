@@ -4,66 +4,82 @@
 
 ## Links
 
-- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
+- [Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
+- [Homepage](https://fuelviews/phpjelly "PHP Jelly Stack Website")
+- [Live Preview](<Homepage url> "Live View")
 
-- [Live](<Homepage url> "Live View")
+## Tempalate Previews
 
-- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
-
-- [API](<API Link> "API")
-
-## Screenshots
-
-![Home Page](/.github/images/screenshot-lg.png "Home Page")
-
+ - Large Screen Preview <br>
+![Home Page](.github/images/screen-lg.jpg "Home Page")
+ - Tablet Screen Preview <br>
+![Home Page](.github/images/screen-md.jpg "Home Page")
+ - Mobile Screen Prewview <br>
+![Home Page](.github/images/screen-sm.jpg "Home Page")
 
 ## Available Commands
 
 In the project directory, you can run:
 
-### `npm start" : "react-scripts start"`,
+### `yarn build`
 
-The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
-You will also see any lint errors in the console.
+	- Builds the project one time
 
-### `"npm run build": "react-scripts build"`,
+### `yarn watch`
 
-Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
+	- Builds the project continuously
 
-### `"npm run test": "react-scripts test"`,
+### `yarn images`
 
-Launches the test runner in the interactive watch mode.
+	- Builds responsive images from "/public/images/src" folder
+	- Only supports "*.png" "*.jpg" filename extensions
+    - Only supports processing of one image at a time (for now)
 
-### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
+## Deploy With
 
-For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
-
-### `"serve": "node server"`
-
-For running the server file on you can use this command.
-
-### `npm run serve`
+- Heroku (free tier)
+- Heroku Buildpack
+- PHP Composer
 
 ## Built With
 
+- Twailwind Plugins
+- Docker Compose
+- ImageMagick
+- Dependabot
 - JavaScript
-- Node
-- NPM
-- Webpack
+- CSSNano
+- Apache2
+- Tailwind
+- PostCSS
+- PHP 8.1
+- Nodejs
+- Docker
 - HTML
+- NPM
+- Snyk
+- Yarn
 - CSS
 
-## Future Updates
+## "Built With" - Special Thanks
 
-- [ ] Reliable Storage
+- [iunteq/tailwindcss-textshadow]("https://github.com/iunteq/tailwindcss-textShadow")
+- [@ruhith/generate-robots-text]("https://github.com/Udakara/generate-robots-text")
+- [orestbida/cookieconsent]("https://github.com/orestbida/cookieconsent")
+- [sitemap-generator-cli]("https://www.npmjs.com/package/sitemap-generator-cli")
+- [php:8.1.3RC1-apache]("https://registry.hub.docker.com/layers/php/library/php/8.1.3RC1-apache/images/sha256-584796346e375a811b018950c459e47d82891dc2899a96785ef1c56865f50e0c?context=explore")
 
-## Author
+## Authors & Contributors
 
-**Rohit Jain**
+**SkyJebus**
 
-- [Profile](https://github.com/rohit19060 "Rohit jain")
-- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
-- [Website](https://kingtechnologies.in "Welcome")
+- [Profile](https://github.com/skyjebus "SkyJebus Profile")
+- [Website](https://fuelviews.com "Welcome")
+
+**SweatyBreeze**
+
+- [Profile](https://github.com/sweatybreeze "SweatyBreeze Profile")
+- [Website](https://fuelviews.com "Welcome")
 
 ## 🤝 Support
 
