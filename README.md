@@ -37,11 +37,11 @@
 
 ### Windows
 
-#### Step 1
+#### Step One
  - Install Docker Desktop and enable Docker Compose
  - Install VS Code, install All "Remote Development" extentions, install All "WSL" and "Remote - WSL" extentions, install "Docker" extentsion
 
-#### Step 
+#### Step Two
  - Install [Ubuntu WSL]("https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?ocid=9nblggh4msv6_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab")
  - Install WSL `wsl --install'
  - Open new WSL install `wsl`
@@ -53,7 +53,7 @@
  - Install all local VS Code extentsions to Remote WSL
  - Reboot Remote WSL
 
-### Step 3 
+### Step Three 
  - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
  - Install node packages `yarn install`
