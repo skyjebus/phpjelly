@@ -87,6 +87,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
 sleep(200).then(() => {
 document.getElementById('dot').classList.add('transition') });
 // Calling the function directly
@@ -97,6 +98,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
+// deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
 sleep(200).then(() => {
 document.getElementById("dot").classList.add('transition');
 document.getElementById("dot2").classList.add('transition');
