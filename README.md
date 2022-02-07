@@ -22,7 +22,6 @@
  - Navigate to the root of your newly cloned repo in terminal
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
- - That's it!
 
 ### MacOS
 
@@ -33,7 +32,6 @@
  - Navigate to the root of your newly cloned repo in terminal
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
- - That's it!
 
 ### Windows
 
@@ -57,7 +55,6 @@
  - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
  - Install node packages `yarn install`
- - That's it!
 
 ## Available Commands
 
