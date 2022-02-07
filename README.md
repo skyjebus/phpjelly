@@ -2,12 +2,14 @@
 
 ## Tempalate Previews
 
- - Large Screen Preview <br>
-![Home Page](.github/images/screen-lg.jpg "Home Page")
- - Tablet Screen Preview <br>
-![Home Page](.github/images/screen-md.jpg "Home Page")
- - Mobile Screen Prewview <br>
-![Home Page](.github/images/screen-sm.jpg "Home Page")
+### Large Screen Preview <br>
+   ![Home Page](.github/images/screen-lg.jpg "Home Page")
+
+### Tablet Screen Preview <br>
+   ![Home Page](.github/images/screen-md.jpg "Home Page")
+
+### Mobile Screen Prewview <br>
+   ![Home Page](.github/images/screen-sm.jpg "Home Page")
 
 ## Setup & Installation
 
