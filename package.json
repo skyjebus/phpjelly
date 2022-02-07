@@ -1,7 +1,7 @@
 {
   "name": "phpjelly",
   "version": "1.0.0",
-  "description": "Heroku PHP Jelly Stack",
+  "description": "PHP Jelly Stack",
   "scripts": {
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css --verbose",
     "watch": "watch 'yarn run build' ./public & docker-compose up -d & yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://bananas.one &> /dev/null",
