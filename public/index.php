@@ -11,7 +11,7 @@ require $docRoot."/script-header.php"; ?>
 </script>
 </head>
 <?php require $docRoot."/header.php"; ?>
-<main id="main" role="main" class="flex flex-col w-full justify-center">ß
+<main id="main" role="main" class="flex flex-col w-full justify-center">
 
 <div class="flex-col w-full h-fit items-center
 bg-img-1 bg-fixed bg-cover bg-center">
