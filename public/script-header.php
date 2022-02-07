@@ -1,6 +1,6 @@
 <?php
 // website config
-$name = 'PHP Jelly';
+$name = 'Company Name';
 $address = '1313 Mockingbird Ln.';
 $al2 = '#1'; // address line two
 $city = 'Boston';

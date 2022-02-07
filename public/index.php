@@ -23,7 +23,7 @@ bg-img-1 bg-fixed bg-cover bg-center">
 <h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
 Our product is service.
 </span></h1>
-<p class="text-zinc-100 pb-6 text-base md:text-lg font-semibold text-shadow-lg">Target rich environment we need to future-proof this granularity, or we need to button up our approach and it's about managing expectations. Can we parallel path productize idea shower. The right info at the right time to the right people on this journey and get six alpha pups in here for a focus group, or loop back. Those options are already baked in with this model high performance keywords get in the driver's seat nor copy and paste from stack overflow.</p>
+<p class="text-zinc-50 pb-6 text-base md:text-lg font-semibold text-shadow-lg">We are convinced that new-generation time frames work effectively. State-of-the-art culture changes probably ensure standard disclosures. In order to assure that communication has a best-of-breed product line, we must be certain that a task-driven customer steps up to the challenge of a mobile schedule. The strategic headcount readjustment will not encapsulate the quality-assured deliverable, so lightweight solutions efficiently attack the problem of teams.</p>
 </div>
 <div class="flex"></div>
 <div class="space-x-0 md:space-x-2">
@@ -68,18 +68,7 @@ Our product is service.
     $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
 }
 image1(); ?>
-<?php function image2() {
-    $imgName = 'fv'; $imgLocation = $GLOBALS['$imgLocation'];
-    echo '<img class="w-32 h-48 object-cover object-center rounded-lg
-    bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
-    transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
-    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
-    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
-    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
-}
-image2(); ?>
+
 </div>
 <!--<img class="w-32 h-48 object-cover object-center rounded-lg
 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
@@ -98,42 +87,31 @@ data-src="../images/fv-320.jpg" srcset="../images/fv-320.jpg 320w,
 ../images/fv-2000.jpg 2000w,
 ../images/fv-2000-2x.jpg 4000w" sizes="50vmin, 100vmax" width="1" height="1" loading="eager" alt="Descriptive alt text here!">-->
 
-<div class="prose lg:prose-xl">
-<div class="font-extrabold">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-400">
-    Hello world
-  </span>
+</div>
+<div class="text-neutral-300 dark:text-neutral-800 flex-col bg-temple w-full py-16">
+  <div class="flex max-w-5xl mx-auto px-4">
+  <p class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
+  Whiteboard collaborative bandwidth
+  </span></p>
+  </div>
 </div>
 
-<div class="">
-<h2><span class="box-decoration-clone bg-gradient-to-r from-slate-500 to-gray-400 text-white dark:text-gray-900 px-2">
-  Hello<br>
-  World
-</span></h2>
+<div class="flex-col w-full py-16">
+<div class="flex max-w-5xl mx-auto">
+<?php function image2() {
+    $imgName = 'fv'; $imgLocation = $GLOBALS['$imgLocation'];
+    echo '<img class="w-32 h-48 object-cover object-center rounded-lg
+    bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
+    transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
+    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
+    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
+    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
+    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
+    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
+}
+image2(); ?>
 </div>
-
-<div class="h-20 bg-gradient-to-r from-slate-500 via-gray-500 to-slate-600"></div>
-
 </div>
-
-<div class="prose lg:prose-xl">
-<div class="font-extrabold">
-  <span class="bg-clip-text text-transparent bg-gradient-to-r from-gray-500 to-slate-400">
-    Hello world
-  </span>
-</div>
-
-<div class="">
-<h2><span class="box-decoration-clone bg-gradient-to-r from-slate-500 to-gray-400 text-white dark:text-gray-900 px-2">
-  Hello<br>
-  World
-</span></h2>
-</div>
-
-<div class="h-20 bg-gradient-to-r from-slate-500 via-gray-500 to-slate-600"></div>
-
-</div>
-
 </div>
 
 </main>
