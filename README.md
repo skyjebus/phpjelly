@@ -1,12 +1,4 @@
-<h1 align="center"><project-name>PHP Jelly Stack</h1>
-
-<p align="center"><project-description></p>
-
-## Links
-
-- [Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
-- [Homepage](https://fuelviews/phpjelly "PHP Jelly Stack Website")
-- [Live Preview](<Homepage url> "Live View")
+# PHP Jelly Stack
 
 ## Tempalate Previews
 
@@ -16,6 +8,54 @@
 ![Home Page](.github/images/screen-md.jpg "Home Page")
  - Mobile Screen Prewview <br>
 ![Home Page](.github/images/screen-sm.jpg "Home Page")
+
+## Setup & Installation
+
+### Linux
+
+ - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
+ - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+ - Install Docker and Docker Compose
+ - Install [homebrew]("https://brew.sh/")
+ - Navigate to the root of your newly cloned repo in terminal
+ - Install homebrew packages `brew install node npm yarn imagemagick`
+ - Install node packages `yarn install`
+ - That's it!
+
+### MacOS
+
+ - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
+ - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+ - Install Docker Desktop and enable Docker Compose
+ - Install [homebrew]("https://brew.sh/")
+ - Navigate to the root of your newly cloned repo in terminal
+ - Install homebrew packages `brew install node npm yarn imagemagick`
+ - Install node packages `yarn install`
+ - That's it!
+
+### Windows
+
+#### Step 1
+ - Install Docker Desktop and enable Docker Compose
+ - Install VS Code, install All "Remote Development" extentions, install All "WSL" and "Remote - WSL" extentions, install "Docker" extentsion
+
+#### Step 
+ - Install [Ubuntu WSL]("https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?ocid=9nblggh4msv6_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab")
+ - Install WSL `wsl --install'
+ - Open new WSL install `wsl`
+ - Update new WSL install `sudo apt-get update -y && sudo apt upgrade -y`
+ - Install git `sudo apt-get install git`
+ - Install [homebrew]("https://brew.sh/")
+ - Install homebrew packages `brew install node npm yarn imagemagick`
+ - Open new Remote WSL `CTRL+SHIFT+P` select "New Window using Distro"
+ - Install all local VS Code extentsions to Remote WSL
+ - Reboot Remote WSL
+
+### Step 3 
+ - Create new repo with [PHP Jelly Stack]("https://github.com/fuelviews/phpjelly/generate") repo
+ - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+ - Install node packages `yarn install`
+ - That's it!
 
 ## Available Commands
 
@@ -80,6 +120,12 @@ In the project directory, you can run:
 
 - [Profile](https://github.com/sweatybreeze "SweatyBreeze Profile")
 - [Website](https://fuelviews.com "Welcome")
+
+## Links
+
+- [Repo](https://github.com/fuelviews/phpjelly "PHP Jelly Stack Repo")
+- [Homepage](https://fuelviews/phpjelly "PHP Jelly Stack Website")
+- [Live Preview](<Homepage url> "Live View")
 
 ## 🤝 Support
 
