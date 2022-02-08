@@ -4,10 +4,10 @@
   "description": "PHP Jelly Stack",
   "scripts": {
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css --verbose",
-    "watch": "watch 'yarn run build' ./public & docker-compose up -d & yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/ &> /dev/null",
-    "images": "cp ./img-magic.sh ./public/images/src; cd ./public/images/src; ./img-magic.sh; cd ../../..; rm ./public/images/src/img-magic.sh;",
-    "prepublish": "npm run snyk-protect",
-    "snyk-protect": "snyk-protect"
+    "watch": "watch 'yarn run build' ./public & docker-compose --log-level ERROR up",
+    "images": "yarn gulp img",
+    "favicon": "npx favicons-compiled-cli -i ./public/images/favicon.png -c favicon.config.js -o public/favicon/",
+    "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/"
   },
   "repository": {
     "type": "git",
@@ -35,9 +35,12 @@
   },
   "dependencies": {
     "@ruhith/generate-robots-text": "^1.0.1",
+    "favicons-compiled": "^0.0.1",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sharp-responsive": "^0.3.0",
+    "sharp": "^0.30.0",
     "sitemap-generator-cli": "^7.5.0",
-    "yarn": "^1.22.17",
-    "@snyk/protect": "latest"
-  },
-  "snyk": true
+    "yarn": "^1.22.17"
+  }
 }

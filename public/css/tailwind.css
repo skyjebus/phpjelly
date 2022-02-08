@@ -7,22 +7,22 @@
 and (min-width : 1px)
 and (max-width : 320px) {
     .bg-img-1 {
-        background-image: url("../images/boston-320.jpg");
+        background-image: url("../images/boston-xs.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-320.jpg");
+        background-image: url("../images/bg-img2-xs.jpg");
     }
     .bg-img-3 {
-        background-image: url("../images/bg-img3-320.jpg");
+        background-image: url("../images/bg-img3-xs.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-320.jpg");
+        background-image: url("../images/bg-img4-xs.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-320.jpg");
+        background-image: url("../images/bg-img5-xs.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-320.jpg");
+        background-image: url("../images/bg-img6-xs.jpg");
     }
 }
 
@@ -31,141 +31,117 @@ and (max-width : 320px) {
 and (min-width : 321px)
 and (max-width : 375px) {
     .bg-img-1 {
-        background-image: url("../images/boston-375.jpg");
+        background-image: url("../images/boston-sm.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-375.jpg");
+        background-image: url("../images/bg-img2-sm.jpg");
     }
     .bg-img-3 {
-        background-image: url("../images/bg-img3-375.jpg");
+        background-image: url("../images/bg-img3-sm.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-375.jpg");
+        background-image: url("../images/bg-img4-sm.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-375.jpg");
+        background-image: url("../images/bg-img5-sm.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-375.jpg");
-    }
-}
-
-/* Inbetween (portrait and landscape) ----------- */
-@media only screen
-and (min-width : 376px)
-and (max-width : 767px) {
-    .bg-img-1 {
-        background-image: url("../images/boston-480.jpg");
-    }
-    .bg-img-2 {
-        background-image: url("../images/bg-img2-480.jpg");
-    }
-    .bg-img-3 {
-        background-image: url("../images/bg-img3-480.jpg");
-    }
-    .bg-img-4 {
-        background-image: url("../images/bg-img4-480.jpg");
-    }
-    .bg-img-5 {
-        background-image: url("../images/bg-img5-480.jpg");
-    }
-    .bg-img-6 {
-        background-image: url("../images/bg-img6-480.jpg");
+        background-image: url("../images/bg-img6-sm.jpg");
     }
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen
-and (min-width : 768px)
+and (min-width : 376px)
 and (max-width : 1023px) {
     .bg-img-1 {
-        background-image: url("../images/boston-768.jpg");
+        background-image: url("../images/boston-md.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-768.jpg");
+        background-image: url("../images/bg-img2-md.jpg");
     }
     .bg-img-3 {
-        background-image: url("../images/bg-img3-768.jpg");
+        background-image: url("../images/bg-img3-md.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-768.jpg");
+        background-image: url("../images/bg-img4-md.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-768.jpg");
+        background-image: url("../images/bg-img5-md.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-768.jpg");
+        background-image: url("../images/bg-img6-md.jpg");
     }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1024px)
-and (max-width : 1279px) {
+and (max-width : 1079px) {
     .bg-img-1 {
-        background-image: url("../images/boston-1024.jpg");
+        background-image: url("../images/boston-lg.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-1024.jpg");
+        background-image: url("../images/bg-img2-lg.jpg");
     }
     .bg-img-3 {
-        background-image: url("../images/bg-img3-1024.jpg");
+        background-image: url("../images/bg-img3-lg.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-1024.jpg");
+        background-image: url("../images/bg-img4-lg.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-1024.jpg");
+        background-image: url("../images/bg-img5-lg.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-1024.jpg");
+        background-image: url("../images/bg-img6-lg.jpg");
     }
 }
 
 /* Inbetween Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1280px)
-and (max-width : 1823px) {
+and (min-width : 1080px)
+and (max-width : 1500px) {
     .bg-img-1 {
-        background-image: url("../images/boston-1400.jpg");
+        background-image: url("../images/boston-xl.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-1400.jpg");
+        background-image: url("../images/bg-img2-xl.jpg");
     }
     .bg-img3 {
-        background-image: url("../images/bg-img3-1400.jpg");
+        background-image: url("../images/bg-img3-xl.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-1400.jpg");
+        background-image: url("../images/bg-img4-xl.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-1400.jpg");
+        background-image: url("../images/bg-img5-xl.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-1400.jpg");
+        background-image: url("../images/bg-img6-xl.jpg");
     }
 }
 
 /* Large screens ----------- */
 @media only screen
-and (min-width : 1824px) {
+and (min-width : 1501px) {
     .bg-img-1 {
-        background-image: url("../images/boston-4000.jpg");
+        background-image: url("../images/boston-2xl.jpg");
     }
     .bg-img-2 {
-        background-image: url("../images/bg-img2-4000.jpg");
+        background-image: url("../images/bg-img2-2xl.jpg");
     }
     .bg-img-3 {
-        background-image: url("../images/bg-img3-4000.jpg");
+        background-image: url("../images/bg-img3-2xl.jpg");
     }
     .bg-img-4 {
-        background-image: url("../images/bg-img4-4000.jpg");
+        background-image: url("../images/bg-img4-2xl.jpg");
     }
     .bg-img-5 {
-        background-image: url("../images/bg-img5-4000.jpg");
+        background-image: url("../images/bg-img5-2xl.jpg");
     }
     .bg-img-6 {
-        background-image: url("../images/bg-img6-4000.jpg");
+        background-image: url("../images/bg-img6-2xl.jpg");
     }
 }
 /* Navigation active llink color and border-bottom */

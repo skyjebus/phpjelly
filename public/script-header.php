@@ -74,13 +74,4 @@ if (localStorage.theme === 'system' || (!('theme' in localStorage) && window.mat
 <style><?php require $docRoot.'/css/styles.css'; ?></style>
 
 <!-- fav icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="<?php echo $docRoot; ?>/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="<?php echo $docRoot; ?>/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="<?php echo $docRoot; ?>/favicon-64x64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="<?php echo $docRoot; ?>/favicon-128x128.png">
-<link rel="icon" type="image/png" sizes="256x256" href="<?php echo $docRoot; ?>/favicon-256x256.png">
-<link rel="apple-touch-icon" sizes="57x57" href="<?php echo $docRoot; ?>/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="<?php echo $docRoot; ?>/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="<?php echo $docRoot; ?>/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="<?php echo $docRoot; ?>/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="256x256" href="<?php echo $docRoot; ?>/apple-touch-icon-256x256.png">
+<?php require $docRoot.'/favicon/favicons-meta-tags.html'; ?>
