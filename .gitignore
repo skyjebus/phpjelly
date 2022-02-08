@@ -25,3 +25,4 @@ snyk_report.html
 .dccache
 .DS_Store
 public/.DS_Store
+public/cached-index.html
