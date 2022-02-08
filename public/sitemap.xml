@@ -3,4 +3,7 @@
   <url>
     <loc>https://heroku-phpjelly.herokuapp.com/</loc>
   </url>
+  <url>
+    <loc>https://heroku-phpjelly.herokuapp.com/default-page-template/</loc>
+  </url>
 </urlset>

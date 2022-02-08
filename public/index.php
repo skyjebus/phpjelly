@@ -2,7 +2,6 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot."/script-header.php"; ?>
 <title>Home | <?php echo $name ?></title>
-<link rel="canonical" href="<?php echo $canonicalFilename; ?>">
 <style>
 
 </style>
@@ -21,7 +20,7 @@ bg-img-1 bg-fixed bg-cover bg-center">
 <div class="flex-col py-12 md:py-32">
   <div class="flex-col">
 <h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
-Our product is service.
+Our product is service. test4
 </span></h1>
 <p class="text-zinc-50 pb-6 text-base md:text-lg font-semibold text-shadow-lg">We are convinced that new-generation time frames work effectively. State-of-the-art culture changes probably ensure standard disclosures. In order to assure that communication has a best-of-breed product line, we must be certain that a task-driven customer steps up to the challenge of a mobile schedule. The strategic headcount readjustment will not encapsulate the quality-assured deliverable, so lightweight solutions efficiently attack the problem of teams.</p>
 </div>
