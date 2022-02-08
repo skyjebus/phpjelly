@@ -98,7 +98,6 @@ In the project directory, you can run:
 - Nodejs
 - HTML
 - NPM
-- Snyk
 - Yarn
 - CSS
 
