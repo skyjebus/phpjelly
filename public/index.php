@@ -55,63 +55,145 @@ Our product is service.
 </div>
 
 <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl">
-<div class="inline-flex">
+
+<h1>H1 Item</h1>
+<h2>H2 Item</h2>
+<h3>H3 Item</h3>
+<h4>H4 Item</h4>
+<h5>H5 Item</h5>
+<h6>H6 Item</h6>
+
+</div>
+
+<div class="text-neutral-300 dark:text-neutral-800 flex-col bg-temple w-full py-16">
+<div class="flex max-w-5xl mx-auto px-4">
+<p class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
+Whiteboard collaborative bandwidth
+</span></p>
+</div>
+</div>
+
+<div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl">
+
+<blockquote>
+There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.
+</blockquote>
+
+<figure>
+<blockquote cite="https://www.huxley.net/bnw/four.html">
+  <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
+</blockquote>
+<figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
+</figure>
+
+<del>
+<p>“I apologize for the delay.”</p>
+</del>
+<ins cite="../howtobeawizard.html" datetime="2018-05">
+<p>“A wizard is never late …”</p>
+</ins>
+
+<code>Code Item</code>
+
+<p><cite>Cite Item</cite></p>
+
+<p><mark>Mark Item</mark></p>
+
+<p><q>Q Item</q></p>
+
+<p><samp>Samp Item</samp></p>
+
+<p><sub>Sub Item</sub></p>
+
+<details>
+<summary>Details</summary>
+Something small enough to escape casual notice.
+</details>
+<wbr>
+<details>
+<summary>I have keys but no doors. I have space but no room. You can enter but can’t leave. What am I?</summary>
+A keyboard.
+</details>
+<wbr>
+<address>
+<a href="mailto:jim@rock.com">jim@rock.com</a><br>
+<a href="tel:+13115552368">(311) 555-2368</a>
+</address>
+<hr>
 <?php function image1() {
     $imgName = 'fv'; $imgLocation = $GLOBALS['$imgLocation'];
-    echo '<img class="w-32 h-48 object-cover object-center rounded-lg
+    echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0
     bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
-    transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
+    transition motion-reduce:transition-none duration-250"' . 'data-src="' . $imgLocation . $imgName . '-320.jpg"' . 
     'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
-    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
-    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-4000.jpg 2800w,' .
-    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
+    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
+    $imgLocation . $imgName . '-1024.jpg 1024w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-4000.jpg 1536w,"' .
+    'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
 }
 image1(); ?>
+<hr>
+<div class="max-w-xl p-5 my-10 bg-white rounded-md shadow-sm">
+<div>
+<form action="" method="POST">
+<div class="mb-6">
+<label for="name" class="block mb-2 text-sm text-gray-600"
+>Full Name</label
+>
+<input
+type="text"
+name="name"
+placeholder="John Doe"
+required
+class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+/>
+</div>
+<div class="mb-6">
+<label for="email" class="block mb-2 text-sm text-gray-600"
+>Email Address</label
+>
+<input
+type="email"
+name="email"
+placeholder="you@email.com"
+required
+class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+/>
+</div>
+<div class="mb-6">
+<label for="phone" class="text-sm text-gray-600">Phone Number</label>
+<input
+type="text"
+name="phone"
+placeholder="91 1234-567"
+required
+class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+/>
+</div>
+<div class="mb-6">
+<label for="message" class="block mb-2 text-sm text-gray-600"
+>Your Message</label
+>
 
+<textarea
+rows="5"
+name="message"
+placeholder="Your Message"
+class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md  focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300"
+required
+></textarea>
 </div>
-<!--<img class="w-32 h-48 object-cover object-center rounded-lg
-bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
-transition motion-reduce:transition-none duration-250"
-data-src="../images/fv-320.jpg" srcset="../images/fv-320.jpg 320w,
-../images/fv-375.jpg 375w,
-../images/fv-375-2x.jpg 750w,
-../images/fv-480.jpg 480w,
-../images/fv-480-2x.jpg 960w,
-../images/fv-768.jpg 768w,
-../images/fv-768-2x.jpg 1536w,
-../images/fv-1024.jpg 1024w,
-../images/fv-1024-2x.jpgskew-y-12 2048w,
-../images/fv-1400.jpg 1400w,
-../images/fv-1400-2x.jpg 2800w,
-../images/fv-2000.jpg 2000w,
-../images/fv-2000-2x.jpg 4000w" sizes="50vmin, 100vmax" width="1" height="1" loading="eager" alt="Descriptive alt text here!">-->
-
+<div class="mb-6">
+<button
+type="submit"
+class="w-full px-2 py-4 text-white bg-indigo-500 rounded-md  focus:bg-indigo-600 focus:outline-none"
+>
+Send Message
+</button>
 </div>
-<div class="text-neutral-300 dark:text-neutral-800 flex-col bg-temple w-full py-16">
-  <div class="flex max-w-5xl mx-auto px-4">
-  <p class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
-  Whiteboard collaborative bandwidth
-  </span></p>
-  </div>
+</form>
+</div>
 </div>
 
-<div class="flex-col w-full py-16">
-<div class="flex max-w-5xl mx-auto">
-<?php function image2() {
-    $imgName = 'fv'; $imgLocation = $GLOBALS['$imgLocation'];
-    echo '<img class="w-32 h-48 object-cover object-center rounded-lg
-    bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl
-    transition motion-reduce:transition-none duration-250"' . 'data-src="$imgLocation' . $imgName . '-320.jpg"' . 
-    'srcset="' . $imgLocation . $imgName . '-320.jpg 320w,' . $imgLocation . $imgName . '-375.jpg 375w,' . $imgLocation . $imgName . '-768.jpg 750w,' .
-    $imgLocation . $imgName . '-480.jpg 480w,' . $imgLocation . $imgName . '-1024.jpg 960w,' .
-    $imgLocation . $imgName . '-768.jpg 768w,' . $imgLocation . $imgName . '-1400.jpg 1536w,' . $imgLocation . $imgName . '-1024.jpg 1024w,' .
-    $imgLocation . $imgName . '-4000.jpg 2048w,' . $imgLocation . $imgName . '-1400.jpg 1400w,' . $imgLocation . $imgName . '-1400.jpg 2800w,' .
-    $imgLocation . $imgName . '-4000.jpg 2000w,' . $imgLocation . $imgName . '-4000.jpg 4000w"' . 'sizes="50vmin, 100vmax" width="1" height="1"' . 'loading="eager" alt="Descriptive alt text here!">';
-}
-image2(); ?>
-</div>
-</div>
 </div>
 
 </main>
