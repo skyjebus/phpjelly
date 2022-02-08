@@ -1,8 +1,7 @@
 <?php
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot."/script-header.php"; ?>
-<title>Home | <?php echo $name ?></title>
-<link rel="canonical" href="<?php echo $canonicalFilename; ?>">
+<title>Live Dev Page | <?php echo $name ?></title>
 <style>
 
 </style>

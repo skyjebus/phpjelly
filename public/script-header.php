@@ -56,6 +56,7 @@ ob_start(); // Start the output buffer
 <!-- empty html class for dark mode -->
 <html lang="en" class="">
 <head>
+<link rel="canonical" href="<?php echo $canonicalFilename; ?>">
 <script>
 if (localStorage.theme === 'system' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
   html.classList.add("dark") // inline to prevent FOUC
