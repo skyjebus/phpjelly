@@ -1,17 +1,12 @@
 # PHP Jelly Stack
 
-<description>Description</description>
+![Pagespeed Report](.github/images/pagespeed.jpg "Pagespeed Report")
 
-## Template Previews
+<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle, and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development plus tasks, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku Buildpack, PHP Composer, and a Procfile. Push changes near instantly by using Heroku piplines and configuring automatic branch deplotment. Compaitible with Heroku's free dynos.</description>
 
-### Large Screen Preview <br>
-   ![Home Page](.github/images/screen-lg.jpg "Home Page")
+- [Live Preview](https://heroku-phpjelly.herokuapp.com/ "Live View")
 
-### Tablet Screen Preview <br>
-   ![Home Page](.github/images/screen-md.jpg "Home Page")
-
-### Mobile Screen Prewview <br>
-   ![Home Page](.github/images/screen-sm.jpg "Home Page")
+- [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fheroku-phpjelly.herokuapp.com%2F "PageSpeed Report")
 
 ## Getting Started
 
@@ -20,7 +15,7 @@
  - Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
  - Install Docker and Docker Compose
- - Install [homebrew]("https://brew.sh/")
+ - Install [Homebrew]("https://brew.sh/")
  - Navigate to the root of your newly cloned repo in terminal
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
@@ -30,7 +25,7 @@
  - Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
  - Install Docker Desktop and enable Docker Compose
- - Install [homebrew]("https://brew.sh/")
+ - Install [Homebrew]("https://brew.sh/")
  - Navigate to the root of your newly cloned repo in terminal
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
@@ -47,7 +42,7 @@
  - Open new WSL install `wsl`
  - Update new WSL install `sudo apt-get update -y && sudo apt upgrade -y`
  - Install git `sudo apt-get install git`
- - Install [homebrew](https://brew.sh/)
+ - Install [Homebrew](https://brew.sh/)
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Open new Remote WSL `CTRL+SHIFT+P` select "New Window using Distro"
  - Install all local VS Code extentsions to Remote WSL
@@ -64,23 +59,46 @@ In the project directory, you can run:
 
 ### `yarn build`
 
-	- Builds the project one time
+   - Builds tailwind css file
+   - Config files: "tailwind.config.js"
 
 ### `yarn watch`
 
-	- Builds the project continuously
+   - Continuously builds tailwind css
+   - Starts apache docker container on localhost:3000
+   - Formats codebase with prettier
 
 ### `yarn images`
 
-	- Builds responsive images from "/public/images/src" folder
-	- Only supports "*.png" "*.jpg" filename extensions
-    - Only supports processing of one image at a time (for now)
+   - Builds responsive images from "/images/" folder
+   - Saves responsives images to "/public/images/" folder
 
-## Deploy With
+### `yarn favicon`
 
-- Heroku (free tier)
-- Heroku Buildpack
-- PHP Composer
+   - Builds favicon images and manifest files from "/images/favicon/favicon.png"
+   - Saves favicon images and manifest files to "/public/images/favicon/" folder
+   - Config file: "favicon.config.js"
+
+### `yarn sitemap`
+
+   - Builds sitemap.xml from specified live location
+   - Saves sitemap.xml to "/public/sitemap.xml"
+   - Config file: "package.json"
+   - Update the sitemap comamnd with your live location: "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
+   - Builds robots.txt
+   - Saves robots.txt to "/public/robots.txt"
+   - Config files: "robots-text-config.js"
+
+### `yarn prettier`
+
+   - Formats all files with prettier
+   - Config file: "prettier.config.js"
+
+### `yarn prod`
+
+   - Prepares project for production by running "yarn images", "yarn favicon" "yarn sitemap", "yarn prettier"
+
+###
 
 ## Built With
 
@@ -108,6 +126,12 @@ In the project directory, you can run:
 - [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)
 - [sitemap-generator-cli](https://www.npmjs.com/package/sitemap-generator-cli)
 - [php:8.1.3RC1-apache](https://registry.hub.docker.com/layers/php/library/php/8.1.3RC1-apache/images/sha256-584796346e375a811b018950c459e47d82891dc2899a96785ef1c56865f50e0c?context=explore)
+
+## Deploy With
+
+- Heroku (free tier)
+- Heroku Buildpack
+- PHP Composer
 
 ## Authors & Contributors
 

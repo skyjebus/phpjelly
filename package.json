@@ -4,12 +4,12 @@
   "description": "PHP Jelly Stack",
   "scripts": {
     "build": "postcss ./public/css/tailwind.css -o ./public/css/styles.css --verbose",
-    "watch": "watch 'yarn run build' ./public & docker-compose --log-level ERROR up",
+    "watch": "watch 'yarn run build' ./public & docker-compose --log-level ERROR up & yarn prettier",
     "images": "yarn gulp img",
-    "prettier": "npx prettier ./public/ --write",
     "favicon": "npx favicons-compiled-cli -i ./images/favicon/favicon.png -c favicon.config.js -o public/favicon/",
     "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
-    "prod": "yarn images & yarn favicon & yarn sitemap & yarn build"
+    "prettier": "npx prettier ./public/ --write",
+    "prod": "yarn images & yarn favicon & yarn sitemap & yarn build &yarn prettier"
   },
   "repository": {
     "type": "git",

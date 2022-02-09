@@ -1,8 +1,4 @@
-/**
- * /* Custom javascript goes here, please comment your code
- *
- * @format
- */
+/* Custom javascript goes here, please comment your code */
 
 // Dark and light mode toggle
 const toggle = document.querySelector("#toggle");
@@ -36,7 +32,9 @@ function load() {
 load();
 
 var toggleDarkMode = function () {
-  toggle.checked ? window.localStorage.setItem("theme", "dark") : localStorage.setItem("theme", "light");
+  toggle.checked
+    ? window.localStorage.setItem("theme", "dark")
+    : localStorage.setItem("theme", "light");
   if (localStorage.theme === "dark") {
     html.classList.add("dark", "c_darkmode");
     var checked = JSON.parse(localStorage.getItem("toggle2"));
@@ -57,7 +55,9 @@ var toggleDarkMode = function () {
 };
 
 var toggleDarkMode2 = function () {
-  toggle2.checked ? window.localStorage.setItem("theme", "dark") : localStorage.setItem("theme", "light");
+  toggle2.checked
+    ? window.localStorage.setItem("theme", "dark")
+    : localStorage.setItem("theme", "light");
   if (localStorage.theme === "dark") {
     html.classList.add("dark", "c_darkmode");
     var checked = JSON.parse(localStorage.getItem("toggle"));
@@ -82,7 +82,7 @@ toggleDarkMode2();
 toggle2.addEventListener("click", toggleDarkMode2);
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // deepcode ignore PromiseNotCaughtGeneral: <please specify a reason of ignoring this>
@@ -94,7 +94,7 @@ toggleDarkMode();
 toggle.addEventListener("click", toggleDarkMode);
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 sleep(200).then(() => {
@@ -104,7 +104,9 @@ sleep(200).then(() => {
 
 // Navigation links javascript + active link color and border-bottom
 window.onload = function () {
-  var all_links = document.getElementById("navigation-ol").getElementsByTagName("a"),
+  var all_links = document
+      .getElementById("navigation-ol")
+      .getElementsByTagName("a"),
     i = 0,
     len = all_links.length,
     full_path = location.href.split("#")[0]; //Ignore hashes?
@@ -115,7 +117,9 @@ window.onload = function () {
       all_links[i].className += " active";
     }
   }
-  var all_links2 = document.getElementById("navigation-ol-mobile").getElementsByTagName("a"),
+  var all_links2 = document
+      .getElementById("navigation-ol-mobile")
+      .getElementsByTagName("a"),
     b = 0,
     len2 = all_links2.length,
     full_path2 = location.href.split("#")[0]; //Ignore hashes?
@@ -215,7 +219,7 @@ function initGTM() {
     dataLayer.push({
       event: "gtm.js",
       "gtm.start": new Date().getTime(),
-      "gtm.uniqueEventId": 0
+      "gtm.uniqueEventId": 0,
     });
   }; // this part ensures PageViews is always tracked
   script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MSCCM8B";
