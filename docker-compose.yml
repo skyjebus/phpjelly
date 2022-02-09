@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  apache:
+      restart: unless-stopped
+      build:
+        context: ./
+        dockerfile: Dockerfile
+      ports:
+        - 3000:443
+      volumes:
+        - ./public:/var/www/html:rw

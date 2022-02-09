@@ -1,0 +1,8 @@
+{
+  "name": "Heroku PHP Jelly Stack",
+  "description": "Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku PHP Buildpack, PHP Composer, and a Procfile. Push changes near instantly by utiliziing Heroku's pipline feature and configuring automatic branch deployments. Compaitible with Heroku's free and paid dynos.",
+  "repository": "https://github.com/fuelviews/heroku-phpjelly",
+  "addons": [],
+  "keywords": ["heroku, php jelly stack, php jelly, php, html, js, static, website, starter, tailwind, tailwindcss"],
+	"buildpacks": [{"url": "heroku/heroku-buildpack-php"}]
+}
