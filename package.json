@@ -8,7 +8,7 @@
     "images": "yarn gulp img",
     "favicon": "npx favicons-compiled-cli -i ./images/favicon/favicon.png -c favicon.config.js -o public/favicon/",
     "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
-    "prod": "yarn gulp img; yarn favicon; yarn sitemap;"
+    "prod": "yarn images & yarn favicon & yarn sitemap & yarn build"
   },
   "repository": {
     "type": "git",
