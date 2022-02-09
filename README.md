@@ -2,7 +2,7 @@
 
 ![Pagespeed Report](.github/images/pagespeed.jpg "Pagespeed Report")
 
-<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku PHP Buildpack, PHP Composer, and a Procfile. Push changes near instantly by utiliziing Heroku's pipline feature and configuring automatic branch deployments. Compaitible with Heroku's free and paid dynos.</description>
+<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, dark mode toggle and GDPR/CCPA compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development, tailwind for styling and PHP/HTML/JS for semi-static creation. Deploy insanely fast with Heroku PHP Buildpack, PHP Composer, and a Procfile. Push changes near instantly by utiliziing Heroku's pipline feature and configuring automatic branch deployments. Compaitible with Heroku's free and paid dynos.</description>
 
 - [Live Preview](https://heroku-phpjelly.herokuapp.com/ "Live View")
 - [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fheroku-phpjelly.herokuapp.com%2F "PageSpeed Report")
