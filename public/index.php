@@ -5,6 +5,7 @@ require $docRoot . "/script-header.php";
 <title>Home | <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
+
 <main id="main" role="main" class="flex flex-col w-full justify-center">
   <div class="flex-col w-full h-fit items-center bg-img-1 bg-fixed bg-cover bg-center">
     <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
@@ -63,7 +64,7 @@ require $docRoot . "/script-header.php";
   <!-- responsive image demo -->
   <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
     <?php
-     function image1()
+    function image1()
     {
         $imgName = "fv";
         $imgLocation = $GLOBALS['$imgLocation'];
@@ -101,4 +102,5 @@ require $docRoot . "/script-header.php";
     ?>
   </div>
 </main>
+
 <?php require $docRoot . "/footer.php"; ?>

@@ -2,9 +2,10 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
 ?>
-<title>Contaact | <?php echo $name; ?></title>
+<title>Contact | <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
+
 <main id="main" role="main" class="flex flex-col w-full justify-center">
   <div class="flex-col w-full max-w-screen-sm md:max-w-3xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
     <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
