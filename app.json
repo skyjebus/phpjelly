@@ -1,6 +1,6 @@
 {
   "name": "Heroku PHP Jelly Stack",
-  "description": "A barebones PHP app on Heroku",
+  "description": "Stupid fast semi-static PHP/HTML/JS website starter",
   "repository": "https://github.com/fuelviews/heroku-phpjelly",
   "addons": []
 }

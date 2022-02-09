@@ -1,12 +1,13 @@
-# PHP Jelly Stack
+# PHP Jelly Stack 
 
 ![Pagespeed Report](.github/images/pagespeed.jpg "Pagespeed Report")
 
-<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle, and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development plus tasks, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku Buildpack, PHP Composer, and a Procfile. Push changes near instantly by using Heroku piplines and configuring automatic branch deplotment. Compaitible with Heroku's free dynos.</description>
+<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle, and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development plus tasks, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku Buildpack, PHP Composer, and a Procfile. Push changes near instantly by using Heroku piplines and configuring automatic branch deplotment. Compaitible with Heroku's free and paid dynos.</description>
 
 - [Live Preview](https://heroku-phpjelly.herokuapp.com/ "Live View")
-
 - [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fheroku-phpjelly.herokuapp.com%2F "PageSpeed Report")
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fuelviews/phpjelly)
 
 ## Getting Started
 
@@ -104,34 +105,39 @@ In the project directory, you can run:
 
 - Twailwind Plugins
 - Docker Compose
-- ImageMagick
 - Dependabot
 - JavaScript
 - CSSNano
 - Apache2
-- Tailwind
 - PostCSS
+- Tailwind
 - PHP 8.1
+- Prettier
 - Docker
 - Nodejs
 - HTML
 - NPM
+- Gulp
 - Yarn
 - CSS
 
 ## "Built With" - Special Thanks
 
-- [iunteq/tailwindcss-textshadow](https://github.com/iunteq/tailwindcss-textShadow)
-- [@ruhith/generate-robots-text](https://github.com/Udakara/generate-robots-text)
-- [orestbida/cookieconsent](https://github.com/orestbida/cookieconsent)
+- [tailwindcss-textshadow](https://github.com/iunteq/tailwindcss-textShadow)
+- [gulp-sharp-responsive](https://github.com/khalyomede/gulp-sharp-responsive)
 - [sitemap-generator-cli](https://www.npmjs.com/package/sitemap-generator-cli)
 - [php:8.1.3RC1-apache](https://registry.hub.docker.com/layers/php/library/php/8.1.3RC1-apache/images/sha256-584796346e375a811b018950c459e47d82891dc2899a96785ef1c56865f50e0c?context=explore)
+- [generate-robots-text](https://github.com/Udakara/generate-robots-text)
+- [favicons-compiled](https://github.com/kodingdotninja/favicons-compiled)
+- [cookieconsent](https://github.com/orestbida/cookieconsent)
 
-## Deploy With
+## Deploy With 
 
-- Heroku (free tier)
-- Heroku Buildpack
+- Heroku PHP Buildpack
 - PHP Composer
+- Heroku Free and Paid Dynos
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fuelviews/phpjelly)
 
 ## Authors & Contributors
 
