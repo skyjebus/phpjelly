@@ -69,8 +69,7 @@ $GLOBALS['$imgLocation'] = "../images/";
 
   <!-- inline css for second -->
   <style>
-  <?php require $docRoot . "/css/styles.css";
-  ?>
+  <?php require $docRoot . "/css/styles.css"; ?>
   </style>
 
   <!-- fav icon -->

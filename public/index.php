@@ -52,15 +52,7 @@ require $docRoot . "/script-header.php";
       </div>
     </div>
   </div>
-
-  <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
-    <h1>H1 Item</h1>
-    <h2>H2 Item</h2>
-    <h3>H3 Item</h3>
-    <h4>H4 Item</h4>
-    <h5>H5 Item</h5>
-    <h6>H6 Item</h6>
-  </div>
+  <!-- whiteboard svg banner -->
   <div class="text-neutral-300 dark:text-neutral-800 flex-col bg-temple w-full py-16">
     <div class="flex max-w-5xl mx-auto px-4">
       <p class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
@@ -68,51 +60,10 @@ require $docRoot . "/script-header.php";
         </span></p>
     </div>
   </div>
+  <!-- responsive image demo -->
   <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
-    <blockquote>
-      There is <del>nothing</del> <ins>no code</ins> either good or bad, but
-      <del>thinking</del> <ins>running
-        it</ins> makes it so.
-    </blockquote>
-    <figure>
-      <blockquote cite="https://www.huxley.net/bnw/four.html">
-        <p>Words can be like X-rays, if you use them properly—they’ll go through anything.
-          You read and you’re
-          pierced.</p>
-      </blockquote>
-      <figcaption>—Aldous Huxley, <cite>Brave New World</cite></figcaption>
-    </figure>
-    <del>
-      <p>“I apologize for the delay.”</p>
-    </del>
-    <ins cite="../howtobeawizard.html" datetime="2018-05">
-      <p>“A wizard is never late …”</p>
-    </ins>
-    <code>Code Item</code>
-    <p><cite>Cite Item</cite></p>
-    <p><mark>Mark Item</mark></p>
-    <p><q>Q Item</q></p>
-    <p><samp>Samp Item</samp></p>
-    <p><sub>Sub Item</sub></p>
-    <details>
-      <summary>Details</summary>
-      Something small enough to escape casual notice.
-    </details>
-    <wbr>
-    <details>
-      <summary>I have keys but no doors. I have space but no room. You can enter but can’t
-        leave. What am I?
-      </summary>
-      A keyboard.
-    </details>
-    <wbr>
-    <address>
-      <a href="mailto:jim@rock.com">jim@rock.com</a><br>
-      <a href="tel:+13115552368">(311) 555-2368</a>
-    </address>
-    <hr>
-    <?php 
-    function image1()
+    <?php
+     function image1()
     {
         $imgName = "fv";
         $imgLocation = $GLOBALS['$imgLocation'];
@@ -146,47 +97,8 @@ require $docRoot . "/script-header.php";
             'sizes="50vmin, 100vmax" width="1" height="1"' .
             'loading="lazy" alt="Descriptive alt text here!">';
     }
-    image1(); ?>
-
-    <hr>
-
-    <div class="max-w-xl p-5 my-10 bg-white dark:bg-gray-800 rounded-md shadow-sm">
-      <div>
-        <form action="" method="POST">
-          <div class="mb-6">
-            <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full
-              Name</label>
-            <input type="text" name="name" placeholder="John Doe" required
-              class="w-full px-3 py-2 placeholder-gray-300 dark:bg-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-100 focus:border-gray-300" />
-          </div>
-          <div class="mb-6">
-            <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email
-              Address</label>
-            <input type="email" name="email" placeholder="your@email.com" required
-              class="w-full px-3 py-2 placeholder-gray-300 dark:bg-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-100 focus:border-gray-300" />
-          </div>
-          <div class="mb-6">
-            <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone
-              Number</label>
-            <input type="text" name="phone" placeholder="617-1234-567" required
-              class="w-full px-3 py-2 placeholder-gray-300 dark:bg-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-100 focus:border-gray-300" />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your
-              Message</label>
-            <textarea rows="5" name="message" placeholder="Your Message"
-              class="w-full px-3 py-2 placeholder-gray-300 dark:bg-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-gray-100 focus:border-gray-300"
-              required>
-            </textarea>
-          </div>
-          <div class="mb-6">
-            <button type="submit"
-              class="w-full px-2 py-4 text-white bg-gray-500 rounded-md focus:bg-gray-600 focus:outline-none">Send
-              Message</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    image1();
+    ?>
   </div>
 </main>
 <?php require $docRoot . "/footer.php"; ?>
