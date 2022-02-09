@@ -5,7 +5,8 @@ require $docRoot . "/script-header.php";
 ?> <title>Privacy Policy | <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
-<main class="flex w-full py-10">
+
+<main class="flex w-full py-10 prose lg:prose-xl dark:prose-invert">
   <section class="px-2 mx-auto max-w-5xl leading-6">
     <h1 class="py-2 text-2xl md:text-3xl">Privacy Policy</h1>
     <h2>At <?php echo $name; ?>, accessible from <?php echo $domain; ?>, one of our main priorities

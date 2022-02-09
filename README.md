@@ -2,16 +2,20 @@
 
 ![Pagespeed Report](.github/images/pagespeed.jpg "Pagespeed Report")
 
-<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle, and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development plus tasks, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku Buildpack, PHP Composer, and a Procfile. Push changes near instantly by using Heroku piplines and configuring automatic branch deplotment. Compaitible with Heroku's free and paid dynos.</description>
+<description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, working dark mode toggle and GDPR compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development, tailwind for styling and PHP/HTML/JS for semi-static website generation. Deploy insanely fast with Heroku PHP Buildpack, PHP Composer, and a Procfile. Push changes near instantly by utiliziing Heroku's pipline feature and configuring automatic branch deployments. Compaitible with Heroku's free and paid dynos.</description>
 
 - [Live Preview](https://heroku-phpjelly.herokuapp.com/ "Live View")
 - [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fheroku-phpjelly.herokuapp.com%2F "PageSpeed Report")
 
+#### Deploy With
+
+- PHP Composer
+- Heroku PHP Buildpack
+- Heroku Free and Paid Dynos
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fuelviews/phpjelly)
 
-## Getting Started
-
-### Install on Linux
+## Install on Linux
 
  - Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
@@ -21,7 +25,7 @@
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
 
-### Install on MacOS
+## Install on MacOS
 
  - Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
  - Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
@@ -31,13 +35,13 @@
  - Install homebrew packages `brew install node npm yarn imagemagick`
  - Install node packages `yarn install`
 
-### Install on Windows
+## Install on Windows
 
-#### Step One
+### Step One
  - Install Docker Desktop and enable [Docker Compose + WSL Backend](https://docs.docker.com/desktop/windows/wsl/#:~:text=Start%20Docker%20Desktop%20from%20the,will%20be%20enabled%20by%20default.)
  - Install VS Code, install All "Remote Development" extentions, install All "WSL" and "Remote - WSL" extentions, install "Docker" extentsion
 
-#### Step Two
+### Step Two
  - Install [Ubuntu WSL](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?ocid=9nblggh4msv6_ORSEARCH_Bing&rtc=1&activetab=pivot:overviewtab)
  - Install WSL `wsl --install'
  - Open new WSL install `wsl`
@@ -61,7 +65,7 @@ In the project directory, you can run:
 ### `yarn build`
 
    - Builds tailwind css file
-   - Config files: "tailwind.config.js"
+   - Config file: "tailwind.config.js"
 
 ### `yarn watch`
 
@@ -71,23 +75,22 @@ In the project directory, you can run:
 
 ### `yarn images`
 
-   - Builds responsive images from "/images/" folder
-   - Saves responsives images to "/public/images/" folder
+   - Builds responsive images from "/images/"
+   - Saves responsives images to "/public/images/"
 
 ### `yarn favicon`
 
    - Builds favicon images and manifest files from "/images/favicon/favicon.png"
-   - Saves favicon images and manifest files to "/public/images/favicon/" folder
+   - Saves favicon images and manifest files to "/public/images/favicon/"
    - Config file: "favicon.config.js"
 
 ### `yarn sitemap`
 
-   - Builds sitemap.xml from specified live location
+   - Builds sitemap.xml from specified live website location
    - Saves sitemap.xml to "/public/sitemap.xml"
    - Config file: "package.json"
-   - Update the sitemap comamnd with your live location: "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
-   - Builds robots.txt
-   - Saves robots.txt to "/public/robots.txt"
+   - Change the sitemap command with your live website location: "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
+   - Builds robots.txt and saves to "/public/robots.txt"
    - Config files: "robots-text-config.js"
 
 ### `yarn prettier`
@@ -99,7 +102,17 @@ In the project directory, you can run:
 
    - Prepares project for production by running "yarn images", "yarn favicon" "yarn sitemap", "yarn prettier"
 
-###
+### Getting started
+   
+   - Follow steps above for your OS
+   - Clone repo on github
+   - Clone new repo locally
+   - Run `install yarn` in project root
+   - Run `yarn run watch`
+   - Open your browser to https://localhost:3000
+   - Optional: Run `yarn images` to build responsive images
+   - Optional: Run `yarn prod` to build for production
+   - Enjoy!
 
 ## Built With
 
@@ -130,14 +143,6 @@ In the project directory, you can run:
 - [generate-robots-text](https://github.com/Udakara/generate-robots-text)
 - [favicons-compiled](https://github.com/kodingdotninja/favicons-compiled)
 - [cookieconsent](https://github.com/orestbida/cookieconsent)
-
-## Deploy With 
-
-- Heroku PHP Buildpack
-- PHP Composer
-- Heroku Free and Paid Dynos
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fuelviews/phpjelly)
 
 ## Authors & Contributors
 
