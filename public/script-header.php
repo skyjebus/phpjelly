@@ -1,7 +1,4 @@
 <?php
-/**
- * @format
- */
 
 // website config
 $name = "Company Name";
@@ -23,37 +20,37 @@ $yelp = "test5";
 // responsive image via php function
 function image1()
 {
-  $imgName = "fv";
-  $imgLocation = $GLOBALS['$imgLocation'];
-  echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
-    'data-src="' .
-    $imgLocation .
-    $imgName .
-    '-xs.jpg"' .
-    'srcset="' .
-    $imgLocation .
-    $imgName .
-    "-xs.jpg 320w," .
-    $imgLocation .
-    $imgName .
-    "-sm.jpg 375w," .
-    $imgLocation .
-    $imgName .
-    "-md.jpg 768w," .
-    $imgLocation .
-    $imgName .
-    "-lg.jpg 960w," .
-    $imgLocation .
-    $imgName .
-    "-lg.jpg 1024w," .
-    $imgLocation .
-    $imgName .
-    "-xl.jpg 1400w," .
-    $imgLocation .
-    $imgName .
-    '-2xl.jpg 1536w,"' .
-    'sizes="50vmin, 100vmax" width="1" height="1"' .
-    'loading="eager" alt="Descriptive alt text here!">';
+    $imgName = "fv";
+    $imgLocation = $GLOBALS['$imgLocation'];
+    echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
+        'data-src="' .
+        $imgLocation .
+        $imgName .
+        '-xs.jpg"' .
+        'srcset="' .
+        $imgLocation .
+        $imgName .
+        "-xs.jpg 320w," .
+        $imgLocation .
+        $imgName .
+        "-sm.jpg 375w," .
+        $imgLocation .
+        $imgName .
+        "-md.jpg 768w," .
+        $imgLocation .
+        $imgName .
+        "-lg.jpg 960w," .
+        $imgLocation .
+        $imgName .
+        "-lg.jpg 1024w," .
+        $imgLocation .
+        $imgName .
+        "-xl.jpg 1400w," .
+        $imgLocation .
+        $imgName .
+        '-2xl.jpg 1536w,"' .
+        'sizes="50vmin, 100vmax" width="1" height="1"' .
+        'loading="eager" alt="Descriptive alt text here!">';
 }
 
 ############################################################################################
@@ -64,13 +61,20 @@ function image1()
 $domain = siteURL();
 function siteURL()
 {
-  $protocol = (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off") || $_SERVER["SERVER_PORT"] == 443 ? "https://" : "http://";
-  $domainName = $_SERVER["HTTP_HOST"];
-  return $protocol . $domainName;
+    $protocol =
+        (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off") ||
+        $_SERVER["SERVER_PORT"] == 443
+            ? "https://"
+            : "http://";
+    $domainName = $_SERVER["HTTP_HOST"];
+    return $protocol . $domainName;
 }
 
 // canonical Links
-$canonicalFilename = "https://" . $_SERVER["HTTP_HOST"] . substr($_SERVER["REQUEST_URI"], 0, strrpos($_SERVER["REQUEST_URI"], ""));
+$canonicalFilename =
+    "https://" .
+    $_SERVER["HTTP_HOST"] .
+    substr($_SERVER["REQUEST_URI"], 0, strrpos($_SERVER["REQUEST_URI"], ""));
 
 // globals image path
 $GLOBALS['$imgLocation'] = "../images/";

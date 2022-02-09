@@ -3,7 +3,6 @@ module.exports = {
     policy:
         {
             userAgent: "*",
-            disallow: ["/functions"],
             allow: ["/"]
         },
 };

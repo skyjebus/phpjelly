@@ -1,7 +1,4 @@
 <?php
-/**
- * @format
- */
 
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
@@ -11,7 +8,7 @@ require $docRoot . "/script-header.php";
 <main class="flex w-full py-10">
   <section class="px-2 mx-auto max-w-5xl leading-6">
     <h1 class="py-2 text-2xl md:text-3xl">Privacy Policy</h1>
-    <h2>At <?php echo $_name; ?>, accessible from <?php echo $domain; ?>, one of our main priorities
+    <h2>At <?php echo $name; ?>, accessible from <?php echo $domain; ?>, one of our main priorities
       is the privacy of our visitors. This Privacy Policy document contains types of information
       that is collected and recorded by <?php echo $name; ?> and how we use it.</h2>
     <p>If you have additional questions or require more information about our Privacy Policy, do not
