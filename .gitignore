@@ -14,15 +14,8 @@ pids
 *.pid.lock
 *.lock
 node_modules
-/node_modules
 
 # CUSTOM
 *.code-workspace
-snyk-error.log
-snyk-result.json
-snyk_report.css
-snyk_report.html
-.dccache
 .DS_Store
 public/.DS_Store
-public/cached-index.html
