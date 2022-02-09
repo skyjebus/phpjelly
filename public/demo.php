@@ -5,6 +5,7 @@ require $docRoot . "/script-header.php";
 <title>Demo | <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
+
 <main id="main" role="main" class="flex flex-col w-full justify-center">
   <!--- demo content -->
   <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
@@ -57,4 +58,5 @@ require $docRoot . "/script-header.php";
     </address>
   </div>
 </main>
+
 <?php require $docRoot . "/footer.php"; ?>

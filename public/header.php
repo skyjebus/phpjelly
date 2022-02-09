@@ -77,7 +77,7 @@
               <ol id="navigation-ol" class="navigation-ol flex flex-wrap md:inline-flex list-none">
                 <li class="navigation-links mx-3"><a href="/" class="font-semibold">Home</a></li>
                 <li class="navigation-links mx-3"><a href="/demo/" class="font-semibold">
-                    Demo</a></li>
+                    Prose Demo</a></li>
                 <li class="navigation-links mx-3"><a href="/contact/" class="font-semibold">
                     Contact</a></li>
               </ol>
@@ -128,7 +128,7 @@
           </li>
           <li class="navigation-links-mobile"><a href="/demo/"
               class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
-              Demo</a></li>
+              Prose Demo</a></li>
           <li class="navigation-links-mobile"><a href="/contact/"
               class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
               Contact</a></li>
