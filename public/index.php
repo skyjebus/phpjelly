@@ -135,4 +135,4 @@ image1(); ?>
 </div>
 </div>
 </main>
-<? require $docRoot."/footer.php"; ?>
+<?php require $docRoot."/footer.php"; ?>
