@@ -53,7 +53,7 @@ require $docRoot."/script-header.php"; ?>
 <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain terms.
 <h4 class="pt-3 pb-1 text-xl">Cookies and Web Beacons</h4>
 <p>Like any other website, <?php echo $name; ?> uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.</p>
-<p class="mt-3">For more information obout our cookies or for optping out please update your <button class="underline" aria-label="View cookie settings" data-cc="c-settings">Cookie Settings</button></p>
+<p class="mt-3">For more information obout our cookies or for opting out please update your <button class="underline" aria-label="View cookie settings" data-cc="c-settings">Cookie Settings</button></p>
 </section>
 </section>
 <?php require $docRoot."/footer.php"; ?>
