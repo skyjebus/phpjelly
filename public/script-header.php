@@ -17,42 +17,6 @@ $ig = "test3";
 $twt = "test4";
 $yelp = "test5";
 
-// responsive image via php function
-function image1()
-{
-    $imgName = "fv";
-    $imgLocation = $GLOBALS['$imgLocation'];
-    echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
-        'data-src="' .
-        $imgLocation .
-        $imgName .
-        '-xs.jpg"' .
-        'srcset="' .
-        $imgLocation .
-        $imgName .
-        "-xs.jpg 320w," .
-        $imgLocation .
-        $imgName .
-        "-sm.jpg 375w," .
-        $imgLocation .
-        $imgName .
-        "-md.jpg 768w," .
-        $imgLocation .
-        $imgName .
-        "-lg.jpg 960w," .
-        $imgLocation .
-        $imgName .
-        "-lg.jpg 1024w," .
-        $imgLocation .
-        $imgName .
-        "-xl.jpg 1400w," .
-        $imgLocation .
-        $imgName .
-        '-2xl.jpg 1536w,"' .
-        'sizes="50vmin, 100vmax" width="1" height="1"' .
-        'loading="eager" alt="Descriptive alt text here!">';
-}
-
 ############################################################################################
 ############## DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING ###############
 ############################################################################################
@@ -105,7 +69,8 @@ $GLOBALS['$imgLocation'] = "../images/";
 
   <!-- inline css for second -->
   <style>
-  <?php require $docRoot . "/css/styles.css"; ?>
+  <?php require $docRoot . "/css/styles.css";
+  ?>
   </style>
 
   <!-- fav icon -->

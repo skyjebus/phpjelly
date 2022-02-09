@@ -111,7 +111,42 @@ require $docRoot . "/script-header.php";
       <a href="tel:+13115552368">(311) 555-2368</a>
     </address>
     <hr>
-    <?php image1(); ?>
+    <?php 
+    function image1()
+    {
+        $imgName = "fv";
+        $imgLocation = $GLOBALS['$imgLocation'];
+        echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
+            'data-src="' .
+            $imgLocation .
+            $imgName .
+            '-xs.jpg"' .
+            'srcset="' .
+            $imgLocation .
+            $imgName .
+            "-xs.jpg 320w," .
+            $imgLocation .
+            $imgName .
+            "-sm.jpg 375w," .
+            $imgLocation .
+            $imgName .
+            "-md.jpg 768w," .
+            $imgLocation .
+            $imgName .
+            "-lg.jpg 960w," .
+            $imgLocation .
+            $imgName .
+            "-lg.jpg 1024w," .
+            $imgLocation .
+            $imgName .
+            "-xl.jpg 1400w," .
+            $imgLocation .
+            $imgName .
+            '-2xl.jpg 1536w,"' .
+            'sizes="50vmin, 100vmax" width="1" height="1"' .
+            'loading="lazy" alt="Descriptive alt text here!">';
+    }
+    image1(); ?>
 
     <hr>
 
