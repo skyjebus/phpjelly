@@ -222,6 +222,6 @@ function initGTM() {
       "gtm.uniqueEventId": 0,
     });
   }; // this part ensures PageViews is always tracked
-  script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MSCCM8B";
+  script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX";
   document.head.appendChild(script);
 }
