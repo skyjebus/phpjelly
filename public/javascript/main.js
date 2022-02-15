@@ -152,7 +152,7 @@ if (hotReload === "true") {
 }
 */
 
-if (hotReload === "true") {
+if (hotReload === "false") {
   var page = location.href.split("/").slice(-1);
   if (page == "")
     //defaults to index.hmtl if no name is found from the location.href
