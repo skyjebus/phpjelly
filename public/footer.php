@@ -1,7 +1,7 @@
-<footer aria-label="footer" class="flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
+<footer aria-label="Footer" class="flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
 
   <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-    <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+    <nav class="-mx-5 -my-2 flex flex-wrap justify-center" role="navigation" ria-label="Footer menu">
       <div class="px-5 py-2">
         <a href="#" class="text-base text-zinc-600 dark:text-zinc-200 hover:text-gray-900"> About </a>
       </div>
