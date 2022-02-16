@@ -143,18 +143,18 @@ btn.addEventListener("click", () => {
 
 // keyboard bilnding enter key
 var inputOne = document.getElementById("toggle");
-inputOne.addEventListener("keyup", function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault();
-        document.getElementById("toggle").click();
-    }
+inputOne.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("toggle").click();
+  }
 });
 var inputTwo = document.getElementById("toggle2");
-inputTwo.addEventListener("keyup", function(event) {
-  if (event.key === 'Enter') {
-        event.preventDefault();
-        document.getElementById("toggle2").click();
-    }
+inputTwo.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("toggle2").click();
+  }
 });
 
 // Select the button on which the
@@ -166,15 +166,13 @@ const navbtn = document.getElementById("prof");
 // Add an event listener for a
 // click to the html document
 document.addEventListener("click", function (event) {
-
-// If the element that is clicked on is
-// not the button itself, then remove
-// the class that was added earlier
-if (event.target.closest(".headclose")) return
-    mMenu.classList.add("hidden");
-    navbtn.classList.remove("active");
+  // If the element that is clicked on is
+  // not the button itself, then remove
+  // the class that was added earlier
+  if (event.target.closest(".headclose")) return;
+  mMenu.classList.add("hidden");
+  navbtn.classList.remove("active");
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */

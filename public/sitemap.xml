@@ -4,6 +4,12 @@
     <loc>https://heroku-phpjelly.herokuapp.com/</loc>
   </url>
   <url>
+    <loc>https://heroku-phpjelly.herokuapp.com/demo/</loc>
+  </url>
+  <url>
+    <loc>https://heroku-phpjelly.herokuapp.com/contact/</loc>
+  </url>
+  <url>
     <loc>https://heroku-phpjelly.herokuapp.com/privacy-policy/</loc>
   </url>
   <url>
