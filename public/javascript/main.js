@@ -141,6 +141,41 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
+// keyboard bilnding enter key
+var inputOne = document.getElementById("toggle");
+inputOne.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById("toggle").click();
+    }
+});
+var inputTwo = document.getElementById("toggle2");
+inputTwo.addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById("toggle2").click();
+    }
+});
+
+// Select the button on which the
+// class has to be toggled
+const mMenu = document.getElementById("hello");
+const navi = document.querySelector(".headclose");
+const navbtn = document.getElementById("prof");
+
+// Add an event listener for a
+// click to the html document
+document.addEventListener("click", function (event) {
+
+// If the element that is clicked on is
+// not the button itself, then remove
+// the class that was added earlier
+if (event.target.closest(".headclose")) return
+    mMenu.classList.add("hidden");
+    navbtn.classList.remove("active");
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */
   setTimeout(initGTM, 3500);
@@ -171,21 +206,3 @@ function initGTM() {
   script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX";
   document.head.appendChild(script);
 }
-
-// click outside mobile menu to close
-
-// Select the button on which the
-        // class has to be toggled
-        const mMenu = document.getElementById("hello");
-        const navi = document.querySelector(".headclose");
- 
-        // Add an event listener for a
-        // click to the html document
-        document.addEventListener("click", function (event) {
- 
-        // If the element that is clicked on is
-        // not the button itself, then remove
-        // the class that was added earlier
-        if (event.target.closest(".headclose")) return
-            mMenu.classList.add("hidden");
-        });
