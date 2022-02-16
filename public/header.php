@@ -1,6 +1,6 @@
 <body
   class="flex flex-col h-screen mx-auto text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 transition motion-reduce:transition-none">
-  <header class="" id="idk">
+  <header class="headclose" id="">
     <!-- secondary (top) navbar goes here -->
     <div class="bg-neutral-400 dark:bg-neutral-900 hidden md:block">
       <nav class="flex max-w-5xl mx-auto px-4 py-1 justify-evenly w-full" role="navigation" aria-label="Secondary Menu">
@@ -60,7 +60,7 @@
       </nav>
     </div>
     <!-- primary nav -->
-    <nav
+    <nav id="idk"
       class="bg-gray-200 dark:bg-gray-900 transition motion-reduce:transition-none shadow-md shadow-transparent relative"
       aria-label="navigation" aria-label="Main menu">
       <div class="max-w-5xl mx-auto px-4">

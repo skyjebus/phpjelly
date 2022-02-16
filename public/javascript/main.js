@@ -172,18 +172,20 @@ function initGTM() {
   document.head.appendChild(script);
 }
 
-// keyboard bilnding enter key
-var input = document.getElementById("toggle");
-input.addEventListener("keyup", function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault();
-        document.getElementById("toggle").click();
-    }
-});
-var input = document.getElementById("toggle2");
-input.addEventListener("keyup", function(event) {
-  if (event.key === 'Enter') {
-        event.preventDefault();
-        document.getElementById("toggle2").click();
-    }
-});
+// click outside mobile menu to close
+
+// Select the button on which the
+        // class has to be toggled
+        const mMenu = document.getElementById("hello");
+        const navi = document.querySelector(".headclose");
+ 
+        // Add an event listener for a
+        // click to the html document
+        document.addEventListener("click", function (event) {
+ 
+        // If the element that is clicked on is
+        // not the button itself, then remove
+        // the class that was added earlier
+        if (event.target.closest(".headclose")) return
+            mMenu.classList.add("hidden");
+        });

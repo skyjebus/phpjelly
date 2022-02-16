@@ -49,7 +49,7 @@ $GLOBALS['$imgLocation'] = "../images/";
 <html lang="en" class="">
 
 <head>
-  <link rel="canonical" href="<?php echo $canonicalFilename; ?>">
+<link rel="canonical" href="<?php echo filter_var($canonicalFilename, FILTER_SANITIZE_URL); ?>">
   <script>
   if (localStorage.theme === 'system' || (!('theme' in localStorage) && window.matchMedia(
         '(prefers-color-scheme: dark)')
