@@ -9,7 +9,7 @@
     "favicon": "npx favicons-compiled-cli -i ./images/favicon/favicon.png -c favicon.config.js -o public/favicon/",
     "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
     "prettier": "npx prettier ./public/ --write",
-    "prod": "yarn images & yarn favicon & yarn sitemap & yarn build &yarn prettier"
+    "prod": "yarn images & yarn favicon & yarn sitemap & yarn build & yarn prettier"
   },
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "tailwindcss": "^3.0.17",
     "tailwindcss-textshadow": "^2.1.3",
     "watch": "^1.0.2",
-    "yarn": "^1.22.17",
+    "generate-robotstxt": "^8.0.3",
     "yarn-audit-fix": "^9.0.10"
   }
 }
