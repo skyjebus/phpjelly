@@ -6,8 +6,9 @@ require $docRoot . "/script-header.php";
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
-<main id="main" role="main" class="flex flex-col w-full justify-center">
-  <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
+<main id="main" role="main" class="flex flex-auto flex-col w-full justify-center">
+  <div
+    class="flex-col w-full h-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
     <h1>Terms of Service</h1>
     <p>Please read these terms and conditions carefully before using our service.</p>
     <p>Interpretation</p>

@@ -53,7 +53,7 @@ window.addEventListener('load', function(){
     cc.run({
         current_lang: 'en',
         autoclear_cookies: true,                   // default: false
-        //theme_css: '<?php echo $domain_url; ?>/css/cookieconsent.css',  // 🚨 replace with a valid path
+        theme_css: '/css/cookieconsent.css',       // 🚨 replace with a valid path
         page_scripts: true,                        // default: false
 
         // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
