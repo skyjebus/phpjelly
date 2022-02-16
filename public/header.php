@@ -6,28 +6,33 @@
       <nav class="flex max-w-5xl mx-auto px-4 py-1 justify-evenly w-full" role="navigation" aria-label="Secondary Menu">
         <!-- left group -->
         <div class="flex justify-evenly my-auto text-sm">
-          <a href="tel:<?php echo $phone; ?>">
-            <div class="mr-auto flex justify-evenly">
-              <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="phone-square-alt"
-                class="svg-inline--fa fa-phone-square-alt fa-w-14 h-5 w-5 my-auto" role="img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <label for="phone" aria-label="Call our phone number">
+            <a href="tel:<?php echo $phone; ?>">
+              <div class="mr-auto flex justify-evenly">
+                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="phone-square-alt"
+                  class="svg-inline--fa fa-phone-square-alt fa-w-14 h-5 w-5 my-auto" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path fill="currentColor"
+                    d="M344.73 309l-56-24a14.46 14.46 0 0 0-4.73-1 13.61 13.61 0 0 0-9.29 4.4l-24.8 30.31a185.51 185.51 0 0 1-88.62-88.62l30.31-24.8A13.61 13.61 0 0 0 196 196a14.2 14.2 0 0 0-1-4.73l-24-56a13 13 0 0 0-11-7.27 14.51 14.51 0 0 0-2.7.31l-52 12A12.57 12.57 0 0 0 96 152c0 128.23 104 232 232 232a12.57 12.57 0 0 0 11.69-9.3l12-52a14.51 14.51 0 0 0 .31-2.7 13 13 0 0 0-7.27-11zM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm0 394a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h340a6 6 0 0 1 6 6z">
+                  </path>
+                </svg>
+                &nbsp;<?php echo $phone; ?>
+              </div>
+            </a>
+          </label>
+          <label for="hours" aria-label="Hours of operation" tabindex="0">
+            <div class="flex">&nbsp &nbsp;<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock"
+                class="svg-inline--fa fa-clock fa-w-16 h-5 w-5 my-auto" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
                 <path fill="currentColor"
-                  d="M344.73 309l-56-24a14.46 14.46 0 0 0-4.73-1 13.61 13.61 0 0 0-9.29 4.4l-24.8 30.31a185.51 185.51 0 0 1-88.62-88.62l30.31-24.8A13.61 13.61 0 0 0 196 196a14.2 14.2 0 0 0-1-4.73l-24-56a13 13 0 0 0-11-7.27 14.51 14.51 0 0 0-2.7.31l-52 12A12.57 12.57 0 0 0 96 152c0 128.23 104 232 232 232a12.57 12.57 0 0 0 11.69-9.3l12-52a14.51 14.51 0 0 0 .31-2.7 13 13 0 0 0-7.27-11zM400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm0 394a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V86a6 6 0 0 1 6-6h340a6 6 0 0 1 6 6z">
+                  d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
                 </path>
-              </svg>
-              &nbsp;<?php echo $phone; ?>
+              </svg>&nbsp;<?php echo $hours; ?>
             </div>
-          </a>
-          <p class="flex">&nbsp &nbsp; <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="clock"
-              class="svg-inline--fa fa-clock fa-w-16 h-5 w-5 my-auto" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512">
-              <path fill="currentColor"
-                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z">
-              </path>
-            </svg>&nbsp;<?php echo $hours; ?></p>
+          </label>
         </div>
         <!-- right group -->
-        <label for="toggle" id="checkbox"
+        <label for="toggle" id="checkbox" tabindex="0"
           class="flex items-center justify-center cursor-pointer text-zinc-400 dark:text-yellow-100 ml-auto">
           <span class="text-xs text-slate-800 dark:text-slate-200">Theme&nbsp;</span>
           <div class="relative">
@@ -72,18 +77,17 @@
                   </path>
                 </svg>
                 <span class="sr-only"><?php echo $name; ?> Logo</span>
-                << /span>
               </a>
             </div>
             <!-- Primary Navbar items -->
             <div class="hidden md:flex items-center space-x-1">
-              <ol id="navigation-ol" class="navigation-ol flex flex-wrap md:inline-flex list-none">
-                <li class="navigation-links mx-3"><a href="/" class="font-semibold">Home</a></li>
-                <li class="navigation-links mx-3"><a href="/demo/" class="font-semibold">
+              <ul role="menu" id="navigation-ol" class="navigation-ol flex flex-wrap md:inline-flex list-none">
+                <li role="menuitem" class="navigation-links mx-3"><a href="/" class="font-semibold">Home</a></li>
+                <li role="menuitem" class="navigation-links mx-3"><a href="/demo/" class="font-semibold">
                     Prose Demo</a></li>
-                <li class="navigation-links mx-3"><a href="/contact/" class="font-semibold">
+                <li role="menuitem" class="navigation-links mx-3"><a href="/contact/" class="font-semibold">
                     Contact</a></li>
-              </ol>
+              </ul>
             </div>
           </div>
           <!-- Secondary Navbar items -->
@@ -119,26 +123,28 @@
                   <path d="M100.75 125.143h28.75" fill="currentColor" fill-rule="evenodd" stroke="currentColor" />
                 </g>
               </svg>
+              <span class="sr-only">Hamburger menu</span>
             </button>
           </div>
         </div>
       </div>
       <!-- mobile menu -->
       <div class="hidden md:hidden absolute w-full z-50 mobile-menu bg-gray-200 dark:bg-gray-700">
-        <ol id="navigation-ol-mobile" class="navigation-ol-mobile list-none">
-          <li class="navigation-links-mobile"><a href="/"
+        <ul role="menu" id="navigation-ol-mobile" class="navigation-ol-mobile list-none">
+          <li role="menuitem" class="navigation-links-mobile"><a href="/"
               class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a>
           </li>
-          <li class="navigation-links-mobile"><a href="/demo/"
+          <li role="menuitem" class="navigation-links-mobile"><a href="/demo/"
               class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
               Prose Demo</a></li>
-          <li class="navigation-links-mobile"><a href="/contact/"
+          <li role="menuitem" class="navigation-links-mobile"><a href="/contact/"
               class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
               Contact</a></li>
-        </ol>
+        </ul>
         <div
           class="flex justify-center mx-auto text-zinc-400 dark:text-yellow-100 border-t border-gray-300 dark:border-gray-500">
-          <label for="toggle2" id="checkbox2" class="flex items-center justify-start cursor-pointer px-2 py-4"><span
+          <label for="toggle2" id="checkbox2" tabindex="0"
+            class="flex items-center justify-start cursor-pointer px-2 py-4"><span
               class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span>
             <div class="relative">
               <input type="checkbox" id="toggle2" class="sr-only darkmode switch" title="darkmode switch"

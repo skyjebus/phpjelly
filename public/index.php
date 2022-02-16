@@ -6,11 +6,11 @@ require $docRoot . "/script-header.php";
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
-<main id="main" role="main" class="flex flex-col w-full justify-center">
+<main id="main" role="main" class="flex flex-auto flex-col w-full justify-center">
   <div class="flex-col w-full h-fit items-center bg-img-1 bg-fixed bg-cover bg-center">
     <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
       <div class="flex mx-auto max-w-5xl px-3 h-full items-center">
-        <div class="flex-col py-12 md:py-32">
+        <article class="flex-col py-12 md:py-32">
           <div class="flex-col">
             <h1 class="pb-4"><span class="font-extrabold text-white text-3xl md:text-4xl lg:text-5xl text-shadow-lg">
                 Our product is service.</span></h1>
@@ -49,7 +49,7 @@ require $docRoot . "/script-header.php";
               </button>
             </a>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </div>
@@ -62,7 +62,8 @@ require $docRoot . "/script-header.php";
     </div>
   </div>
   <!-- responsive image demo -->
-  <div class="flex-col w-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
+  <div
+    class="flex-col w-full h-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
     <?php
     function image1()
     {

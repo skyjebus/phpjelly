@@ -141,61 +141,6 @@ btn.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
 
-// Hot reloading // Please do not edit beyond this point without assistence
-const hotReload = "true";
-
-/*
-if (hotReload === "true") {
-  console.log("worky")
-} else {
-  console.log("fail")
-}
-*/
-
-if (hotReload === "false") {
-  var page = location.href.split("/").slice(-1);
-  if (page == "")
-    //defaults to index.hmtl if no name is found from the location.href
-    page = "./css/styles.css";
-
-  console.log(" Current page: " + page);
-  var url = "/watcher.php?file=" + page; //change this to whatever you want it to be
-  var poll_interval = 2500; //every x seconds poll for file changes. Ajust to suit your requirements
-
-  setInterval(
-    function () {
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-          // XMLHttpRequest.DONE == 4
-          if (xmlhttp.status == 200) {
-            //console.log(xmlhttp.responseText);
-            j = JSON.parse(xmlhttp.responseText);
-            console.log(j);
-            //if file changed RESTULT is TRUE we issue a
-
-            if (j.hasChanged) {
-              console.log("Changed!");
-              window.location.reload(false); //reload the entire page
-            }
-          } else if (xmlhttp.status == 400) {
-            console.log("error 400");
-          } else {
-            console.log("Error " + xmlhttp.status);
-          }
-        }
-      };
-      xmlhttp.open("GET", url, true);
-      xmlhttp.send();
-    },
-
-    //Now let's keep checking if theres been a change.
-    poll_interval
-  );
-} else {
-  console.log("failed live reload");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */
   setTimeout(initGTM, 3500);
