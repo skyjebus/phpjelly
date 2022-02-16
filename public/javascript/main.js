@@ -162,6 +162,7 @@ inputTwo.addEventListener("keyup", function (event) {
 const mMenu = document.getElementById("hello");
 const navi = document.querySelector(".headclose");
 const navbtn = document.getElementById("prof");
+const stack = document.getElementById("hamburger");
 
 // Add an event listener for a
 // click to the html document
@@ -172,7 +173,21 @@ document.addEventListener("click", function (event) {
   if (event.target.closest(".headclose")) return;
   mMenu.classList.add("hidden");
   navbtn.classList.remove("active");
+  stack.setAttribute("aria-expanded", "false");
 });
+
+// add aria label open to mobile nav when open
+
+function beast() {
+  document.getElementById("prof").classList.toggle("active");
+  var x = document.getElementById("hamburger").getAttribute("aria-expanded");
+  if (x == "true") {
+    x = "false";
+  } else {
+    x = "true";
+  }
+  document.getElementById("hamburger").setAttribute("aria-expanded", x);
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */

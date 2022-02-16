@@ -60,7 +60,7 @@
       </nav>
     </div>
     <!-- primary nav -->
-    <nav id="idk"
+    <nav id=""
       class="bg-gray-200 dark:bg-gray-900 transition motion-reduce:transition-none shadow-md shadow-transparent relative"
       aria-label="navigation" aria-label="Main menu">
       <div class="max-w-5xl mx-auto px-4">
@@ -104,8 +104,9 @@
             </button>
           </div>
           <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center dark:text-white" id="prof" onclick="this.classList.toggle('active')">
-            <button id="hamburger" class="mobile-menu-button outline-none" aria-expanded="false" aria-controls="menu">
+          <div class="md:hidden flex items-center dark:text-white" id="prof">
+            <button id="hamburger" onclick="beast()" class=" mobile-menu-button outline-none" aria-expanded="false"
+              aria-controls="menu">
               <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 200 200" class=" hover:"
                 shape-rendering="crispEdges">
                 <g stroke-width="6.5" stroke-linecap="round">
@@ -143,7 +144,8 @@
         </ul>
         <div
           class="flex justify-center mx-auto text-zinc-400 dark:text-yellow-100 border-t border-gray-300 dark:border-gray-500">
-          <label for="toggle2" id="checkbox2" class="flex items-center justify-start cursor-pointer px-2 py-4"><span
+          <label for="toggle2" id="checkbox2" tabindex="0"
+            class="flex items-center justify-start cursor-pointer px-2 py-4"><span
               class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span>
             <div class="relative">
               <input type="checkbox" id="toggle2" class="sr-only darkmode switch" title="darkmode switch"
