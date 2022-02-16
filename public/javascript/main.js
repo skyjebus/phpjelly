@@ -166,7 +166,26 @@ function initGTM() {
       "gtm.start": new Date().getTime(),
       "gtm.uniqueEventId": 0,
     });
-  }; // this part ensures PageViews is always tracked
+  };
+  // this part ensures PageViews is always tracked
   script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX";
   document.head.appendChild(script);
 }
+
+// click outside mobile menu to close
+
+// Select the button on which the
+        // class has to be toggled
+        const mMenu = document.getElementById("hello");
+        const navi = document.querySelector(".headclose");
+ 
+        // Add an event listener for a
+        // click to the html document
+        document.addEventListener("click", function (event) {
+ 
+        // If the element that is clicked on is
+        // not the button itself, then remove
+        // the class that was added earlier
+        if (event.target.closest(".headclose")) return
+            mMenu.classList.add("hidden");
+        });
