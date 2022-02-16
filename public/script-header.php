@@ -36,9 +36,7 @@ function siteURL()
 
 // canonical Links
 $canonicalFilename =
-    "https://" .
-    $_SERVER["HTTP_HOST"] .
-    substr($_SERVER["REQUEST_URI"], 0, strrpos($_SERVER["REQUEST_URI"], ""));
+(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 // globals image path
 $GLOBALS['$imgLocation'] = "../images/";

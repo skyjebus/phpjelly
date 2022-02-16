@@ -166,7 +166,24 @@ function initGTM() {
       "gtm.start": new Date().getTime(),
       "gtm.uniqueEventId": 0,
     });
-  }; // this part ensures PageViews is always tracked
+  };
+  // this part ensures PageViews is always tracked
   script.src = "https://www.googletagmanager.com/gtm.js?id=GTM-XXXX";
   document.head.appendChild(script);
 }
+
+// keyboard bilnding enter key
+var input = document.getElementById("toggle");
+input.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById("toggle").click();
+    }
+});
+var input = document.getElementById("toggle2");
+input.addEventListener("keyup", function(event) {
+  if (event.key === 'Enter') {
+        event.preventDefault();
+        document.getElementById("toggle2").click();
+    }
+});

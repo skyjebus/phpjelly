@@ -1,6 +1,6 @@
 <body
   class="flex flex-col h-screen mx-auto text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 transition motion-reduce:transition-none">
-  <header class="">
+  <header class="" id="idk">
     <!-- secondary (top) navbar goes here -->
     <div class="bg-neutral-400 dark:bg-neutral-900 hidden md:block">
       <nav class="flex max-w-5xl mx-auto px-4 py-1 justify-evenly w-full" role="navigation" aria-label="Secondary Menu">
@@ -37,7 +37,7 @@
           <span class="text-xs text-slate-800 dark:text-slate-200">Theme&nbsp;</span>
           <div class="relative">
             <input type="checkbox" id="toggle" class="sr-only darkmode switch" title="darkmode switch"
-              onclick="save();">
+              onclick="return save();">
             <div class="block bg-gray-600 w-12 h-7 rounded-full"></div>
             <div id="dot" class="dot absolute left-1 top-1 w-5 h-5 rounded-full bg-white flex justify-center mx-auto">
               <div class="flex-col justify-center my-auto">
@@ -129,7 +129,7 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden md:hidden absolute w-full z-50 mobile-menu bg-gray-200 dark:bg-gray-700">
+      <div class="hidden md:hidden absolute w-full z-50 mobile-menu bg-gray-200 dark:bg-gray-700" id="hello">
         <ul role="menu" id="navigation-ol-mobile" class="navigation-ol-mobile list-none">
           <li role="menuitem" class="navigation-links-mobile"><a href="/"
               class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a>
@@ -148,7 +148,7 @@
               class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span>
             <div class="relative">
               <input type="checkbox" id="toggle2" class="sr-only darkmode switch" title="darkmode switch"
-                onclick="save2();">
+                onclick="return save2();">
               <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
               <div id="dot2"
                 class="dot absolute left-1 top-1 w-6 h-6 rounded-full bg-white flex justify-center mx-auto">
