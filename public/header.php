@@ -37,7 +37,7 @@
           <span class="text-xs text-slate-800 dark:text-slate-200">Theme&nbsp;</span>
           <div class="relative">
             <input type="checkbox" id="toggle" class="sr-only darkmode switch" title="darkmode switch"
-              onclick="return save();">
+              onclick="return saveToggleState();">
             <div class="block bg-gray-600 w-12 h-7 rounded-full"></div>
             <div id="dot" class="dot absolute left-1 top-1 w-5 h-5 rounded-full bg-white flex justify-center mx-auto">
               <div class="flex-col justify-center my-auto">
@@ -81,7 +81,7 @@
             </div>
             <!-- Primary Navbar items -->
             <div class="hidden md:flex items-center space-x-1">
-              <ul role="menu" id="navigation-ol" class="navigation-ol flex flex-wrap md:inline-flex list-none">
+              <ul role="menu" id="nav-ul" class="nav-ul flex flex-wrap md:inline-flex list-none">
                 <li role="menuitem" class="navigation-links mx-3"><a href="/" class="font-semibold">Home</a></li>
                 <li role="menuitem" class="navigation-links mx-3"><a href="/demo/" class="font-semibold">
                     Prose Demo</a></li>
@@ -105,8 +105,8 @@
           </div>
           <!-- Mobile menu button -->
           <div class="md:hidden flex items-center dark:text-white" id="prof">
-            <button id="hamburger" onclick="beast()" class=" mobile-menu-button outline-none" aria-expanded="false"
-              aria-controls="menu">
+            <button id="hamburger" onclick="menuAttributeMobile()" class=" mobile-menu-button outline-none"
+              aria-expanded="false" aria-controls="menu">
               <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 200 200" class=" hover:"
                 shape-rendering="crispEdges">
                 <g stroke-width="6.5" stroke-linecap="round">
@@ -130,8 +130,8 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden md:hidden absolute w-full z-50 mobile-menu bg-gray-200 dark:bg-gray-700" id="hello">
-        <ul role="menu" id="navigation-ol-mobile" class="navigation-ol-mobile list-none">
+      <div class="hidden md:hidden absolute w-full bg-gray-200 dark:bg-gray-700" id="hello">
+        <ul role="menu" id="nav-ul-mobile" class="nav-ul-mobile list-none">
           <li role="menuitem" class="navigation-links-mobile"><a href="/"
               class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a>
           </li>
@@ -144,12 +144,11 @@
         </ul>
         <div
           class="flex justify-center mx-auto text-zinc-400 dark:text-yellow-100 border-t border-gray-300 dark:border-gray-500">
-          <label for="toggle2" id="checkbox2" tabindex="0"
-            class="flex items-center justify-start cursor-pointer px-2 py-4"><span
+          <label for="toggle2" id="checkbox2" class="flex items-center justify-start cursor-pointer px-2 py-4"><span
               class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span>
             <div class="relative">
               <input type="checkbox" id="toggle2" class="sr-only darkmode switch" title="darkmode switch"
-                onclick="return save2();">
+                onclick="return saveToggleStateMobile();">
               <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
               <div id="dot2"
                 class="dot absolute left-1 top-1 w-6 h-6 rounded-full bg-white flex justify-center mx-auto">
