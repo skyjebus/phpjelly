@@ -1,7 +1,8 @@
 // Dark and light mode toggle
 const themeToggle = document.querySelector("#toggle");
 const themeToggleMobile = document.querySelector("#toggle2");
-const html = document.querySelector("html");0
+const html = document.querySelector("html");
+0;
 
 // this function does not work on mobile slider
 function saveToggleState() {
@@ -102,9 +103,7 @@ sleep(200).then(() => {
 
 // Navigation links javascript + active link color and border-bottom
 window.onload = function () {
-  var navLinks = document
-      .getElementById("nav-ul")
-      .getElementsByTagName("a"),
+  var navLinks = document.getElementById("nav-ul").getElementsByTagName("a"),
     i = 0,
     len = navLinks.length,
     full_path = location.href.split("#")[0]; //Ignore hashes?
@@ -181,16 +180,6 @@ function menuAttributeMobile() {
   }
   document.getElementById("hamburger").setAttribute("aria-expanded", x);
 }
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */

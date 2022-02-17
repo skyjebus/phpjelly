@@ -130,7 +130,7 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden md:hidden absolute w-full bg-gray-200 dark:bg-gray-700" id="hello">
+      <div class="hidden md:hidden absolute w-full z-50 bg-gray-200 dark:bg-gray-700" id="hello">
         <ul role="menu" id="nav-ul-mobile" class="nav-ul-mobile list-none">
           <li role="menuitem" class="navigation-links-mobile"><a href="/"
               class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a>
