@@ -1,19 +1,17 @@
-/* Custom javascript goes here, please comment your code */
-
 // Dark and light mode toggle
-const toggle = document.querySelector("#toggle");
-const toggle2 = document.querySelector("#toggle2");
-const html = document.querySelector("html");
+const themeToggle = document.querySelector("#toggle");
+const themeToggleMobile = document.querySelector("#toggle2");
+const html = document.querySelector("html");0
 
 // this function does not work on mobile slider
-function save() {
+function saveToggleState() {
   var checkbox = document.getElementById("toggle");
   var checkbox2 = document.getElementById("toggle2");
   localStorage.setItem("toggle", checkbox.checked);
   localStorage.setItem("toggle2", checkbox.checked);
 }
 
-function save2() {
+function saveToggleStateMobile() {
   var checkbox = document.getElementById("toggle");
   var checkbox2 = document.getElementById("toggle2");
   localStorage.setItem("toggle2", checkbox2.checked);
@@ -21,7 +19,7 @@ function save2() {
 }
 
 // this load is functioning properly
-function load() {
+function loadToggleState() {
   var checked = JSON.parse(localStorage.getItem("toggle"));
   document.getElementById("toggle").checked = checked;
   // deepcode ignore RedeclarationVars: <please specify a reason of ignoring this>
@@ -29,10 +27,10 @@ function load() {
   document.getElementById("toggle2").checked = checked;
 }
 
-load();
+loadToggleState();
 
-var toggleDarkMode = function () {
-  toggle.checked
+var toggleTheme = function () {
+  themeToggle.checked
     ? window.localStorage.setItem("theme", "dark")
     : localStorage.setItem("theme", "light");
   if (localStorage.theme === "dark") {
@@ -54,8 +52,8 @@ var toggleDarkMode = function () {
   }
 };
 
-var toggleDarkMode2 = function () {
-  toggle2.checked
+var toggleThemeMobile = function () {
+  themeToggleMobile.checked
     ? window.localStorage.setItem("theme", "dark")
     : localStorage.setItem("theme", "light");
   if (localStorage.theme === "dark") {
@@ -78,8 +76,8 @@ var toggleDarkMode2 = function () {
 };
 
 // Calling the function directly
-toggleDarkMode2();
-toggle2.addEventListener("click", toggleDarkMode2);
+toggleThemeMobile();
+themeToggleMobile.addEventListener("click", toggleThemeMobile);
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -90,8 +88,8 @@ sleep(200).then(() => {
   document.getElementById("dot").classList.add("transition");
 });
 // Calling the function directly
-toggleDarkMode();
-toggle.addEventListener("click", toggleDarkMode);
+toggleTheme();
+themeToggle.addEventListener("click", toggleTheme);
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -104,53 +102,44 @@ sleep(200).then(() => {
 
 // Navigation links javascript + active link color and border-bottom
 window.onload = function () {
-  var all_links = document
-      .getElementById("navigation-ol")
+  var navLinks = document
+      .getElementById("nav-ul")
       .getElementsByTagName("a"),
     i = 0,
-    len = all_links.length,
+    len = navLinks.length,
     full_path = location.href.split("#")[0]; //Ignore hashes?
 
   // Loop through each link.
   for (; i < len; i++) {
-    if (all_links[i].href.split("#")[0] == full_path) {
-      all_links[i].className += " active";
+    if (navLinks[i].href.split("#")[0] == full_path) {
+      navLinks[i].className += " active";
     }
   }
-  var all_links2 = document
-      .getElementById("navigation-ol-mobile")
+  var navLinksMobile = document
+      .getElementById("nav-ul-mobile")
       .getElementsByTagName("a"),
     b = 0,
-    len2 = all_links2.length,
+    lenny = navLinksMobile.length,
     full_path2 = location.href.split("#")[0]; //Ignore hashes?
 
   // Loop through each link.
-  for (; b < len2; b++) {
-    if (all_links2[b].href.split("#")[0] == full_path2) {
-      all_links2[b].className += " active";
+  for (; b < lenny; b++) {
+    if (navLinksMobile[b].href.split("#")[0] == full_path2) {
+      navLinksMobile[b].className += " active";
     }
   }
 }; // this closes window.onload
 
-// Mobile Menu
-const btn = document.querySelector("button.mobile-menu-button");
-const menu = document.querySelector(".mobile-menu");
-
-// Add Event Listeners
-btn.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-});
-
 // keyboard bilnding enter key
-var inputOne = document.getElementById("toggle");
-inputOne.addEventListener("keyup", function (event) {
+var kbAccess = document.getElementById("toggle");
+kbAccess.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     document.getElementById("toggle").click();
   }
 });
-var inputTwo = document.getElementById("toggle2");
-inputTwo.addEventListener("keyup", function (event) {
+var kbAccessMobile = document.getElementById("toggle2");
+kbAccessMobile.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
     event.preventDefault();
     document.getElementById("toggle2").click();
@@ -159,10 +148,15 @@ inputTwo.addEventListener("keyup", function (event) {
 
 // Select the button on which the
 // class has to be toggled
-const mMenu = document.getElementById("hello");
-const navi = document.querySelector(".headclose");
-const navbtn = document.getElementById("prof");
-const stack = document.getElementById("hamburger");
+const menuMobile = document.getElementById("hello");
+const menuNavMobile = document.querySelector(".headclose");
+const menuButtonMobile = document.getElementById("prof");
+const menuBurgerMobile = document.getElementById("hamburger");
+
+// Add Event Listeners
+menuButtonMobile.addEventListener("click", () => {
+  menuMobile.classList.toggle("hidden");
+});
 
 // Add an event listener for a
 // click to the html document
@@ -171,14 +165,13 @@ document.addEventListener("click", function (event) {
   // not the button itself, then remove
   // the class that was added earlier
   if (event.target.closest(".headclose")) return;
-  mMenu.classList.add("hidden");
-  navbtn.classList.remove("active");
-  stack.setAttribute("aria-expanded", "false");
+  menuMobile.classList.add("hidden");
+  menuButtonMobile.classList.remove("active");
+  menuBurgerMobile.setAttribute("aria-expanded", "false");
 });
 
 // add aria label open to mobile nav when open
-
-function beast() {
+function menuAttributeMobile() {
   document.getElementById("prof").classList.toggle("active");
   var x = document.getElementById("hamburger").getAttribute("aria-expanded");
   if (x == "true") {
@@ -188,6 +181,16 @@ function beast() {
   }
   document.getElementById("hamburger").setAttribute("aria-expanded", x);
 }
+
+
+
+
+
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   /** init gtm after 3500 seconds - this could be adjusted */
