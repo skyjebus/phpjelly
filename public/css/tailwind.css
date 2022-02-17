@@ -1,139 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* OLD Smartphones (portrait and landscape) ----------- */
+/* header background image optimization */
 @media only screen and (min-width: 1px) and (max-width: 320px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-xs.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-xs.jpg");
-  }
-  .bg-img-3 {
-    background-image: url("../images/bg-img3-xs.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-xs.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-xs.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-xs.jpg");
-  }
-}
+  .bg-img-1 {background-image: url("../images/boston-xs.jpg");}
+} /* xs ----------- */
 
-/* NEW Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-sm.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-sm.jpg");
-  }
-  .bg-img-3 {
-    background-image: url("../images/bg-img3-sm.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-sm.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-sm.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-sm.jpg");
-  }
-}
+  .bg-img-1 {background-image: url("../images/boston-sm.jpg");}
+} /* sm ----------- */
 
-/* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 376px) and (max-width: 1023px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-md.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-md.jpg");
-  }
-  .bg-img-3 {
-    background-image: url("../images/bg-img3-md.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-md.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-md.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-md.jpg");
-  }
-}
+  .bg-img-1 {background-image: url("../images/boston-md.jpg");}
+} /* md ----------- */
 
-/* Desktops and laptops ----------- */
 @media only screen and (min-width: 1024px) and (max-width: 1079px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-lg.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-lg.jpg");
-  }
-  .bg-img-3 {
-    background-image: url("../images/bg-img3-lg.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-lg.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-lg.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-lg.jpg");
-  }
-}
+  .bg-img-1 {background-image: url("../images/boston-lg.jpg");}
+} /* lg ----------- */
 
-/* Inbetween Desktops and laptops ----------- */
 @media only screen and (min-width: 1080px) and (max-width: 1500px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-xl.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-xl.jpg");
-  }
-  .bg-img3 {
-    background-image: url("../images/bg-img3-xl.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-xl.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-xl.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-xl.jpg");
-  }
-}
+  .bg-img-1 {background-image: url("../images/boston-xl.jpg");}
+}/* xl ----------- */
 
-/* Large screens ----------- */
 @media only screen and (min-width: 1501px) {
-  .bg-img-1 {
-    background-image: url("../images/boston-2xl.jpg");
-  }
-  .bg-img-2 {
-    background-image: url("../images/bg-img2-2xl.jpg");
-  }
-  .bg-img-3 {
-    background-image: url("../images/bg-img3-2xl.jpg");
-  }
-  .bg-img-4 {
-    background-image: url("../images/bg-img4-2xl.jpg");
-  }
-  .bg-img-5 {
-    background-image: url("../images/bg-img5-2xl.jpg");
-  }
-  .bg-img-6 {
-    background-image: url("../images/bg-img6-2xl.jpg");
-  }
-}
-/* Navigation active llink color and border-bottom */
+  .bg-img-1 {background-image: url("../images/boston-2xl.jpg");}
+}/* 2xl ----------- */
+
+/* lg, xl, 2xl - navigation active link color and border-bottom with dark mode */
 .navigation-links .active {
   color: #364152;
   border-bottom: 3px solid #364152;
@@ -146,6 +36,8 @@
   padding-bottom: 4px;
   transition-delay: 200ms;
 }
+
+/* xs, sm, md  - navigation active link color and border-bottom with dark mode */
 .navigation-links-mobile .active {
   background: #d1d5db;
   transition-delay: 15ms;
@@ -154,26 +46,8 @@
   background: #4b5563;
   transition-delay: 15ms;
 }
-/* Pagination / breadcrumb stylying */
-.breadcrumb li:last-child {
-  font-weight: 600;
-}
 
-/* Dark / Light Mode */
-input:checked ~ .dot {
-  transform: translateX(100%);
-  background-color: #0f172a;
-}
-
-/* extra transition durations */
-.duration-50 {
-  transition-duration: 50ms;
-}
-.duration-250 {
-  transition-duration: 250ms;
-}
-
-/* mobile menu button styles */
+/* mobile burger menu button styles */
 .container {
   cursor: pointer;
   display: flex;
@@ -241,8 +115,31 @@ path:nth-child(6) {
   transform: translateX(9px) translateY(1px) rotate(45deg);
 }
 
-/* background from heropatterns.com */
+/* pagination / breadcrumb stylying */
+.breadcrumb li:last-child {
+  font-weight: 600;
+}
+
+/* more transition durations */
+.duration-50 {
+  transition-duration: 50ms;
+}
+.duration-250 {
+  transition-duration: 250ms;
+}
+
+/* dark mode checkbox styles */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #0f172a;
+}
+
+/* background from heropatterns(dot)com */
 .bg-temple {
   background-color: currentColor;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
