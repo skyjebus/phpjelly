@@ -1,26 +1,26 @@
 /* header background image optimization */
 @media only screen and (min-width: 1px) and (max-width: 320px) {
-  .bg-img-1 {background-image: url("../images/boston-xs.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-xs.jpg");}
 } /* xs ----------- */
 
 @media only screen and (min-width: 321px) and (max-width: 375px) {
-  .bg-img-1 {background-image: url("../images/boston-sm.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-sm.jpg");}
 } /* sm ----------- */
 
 @media only screen and (min-width: 376px) and (max-width: 1023px) {
-  .bg-img-1 {background-image: url("../images/boston-md.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-md.jpg");}
 } /* md ----------- */
 
 @media only screen and (min-width: 1024px) and (max-width: 1079px) {
-  .bg-img-1 {background-image: url("../images/boston-lg.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-lg.jpg");}
 } /* lg ----------- */
 
 @media only screen and (min-width: 1080px) and (max-width: 1500px) {
-  .bg-img-1 {background-image: url("../images/boston-xl.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-xl.jpg");}
 }/* xl ----------- */
 
 @media only screen and (min-width: 1501px) {
-  .bg-img-1 {background-image: url("../images/boston-2xl.jpg");}
+  .bg-img-1 {background-image: url("/images/boston-2xl.jpg");}
 }/* 2xl ----------- */
 
 /* background from heropatterns(dot)com */
