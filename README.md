@@ -22,7 +22,7 @@
 - Install Docker and Docker Compose
 - Install [Homebrew]("https://brew.sh/")
 - Navigate to the root of your newly cloned repo in terminal
-- Install homebrew packages `brew install node npm yarn imagemagick`
+- Install homebrew packages `brew install node yarn`
 - Install node packages `yarn install`
 
 ## Install on MacOS
@@ -32,7 +32,7 @@
 - Install Docker Desktop and enable Docker Compose
 - Install [Homebrew]("https://brew.sh/")
 - Navigate to the root of your newly cloned repo in terminal
-- Install homebrew packages `brew install node npm yarn imagemagick`
+- Install homebrew packages `brew install node yarn`
 - Install node packages `yarn install`
 
 ## Install on Windows
@@ -50,7 +50,7 @@
 - Update new WSL install `sudo apt-get update -y && sudo apt upgrade -y`
 - Install git `sudo apt-get install git`
 - Install [Homebrew](https://brew.sh/)
-- Install homebrew packages `brew install node npm yarn imagemagick`
+- Install homebrew packages `brew install node yarn`
 - Open new Remote WSL `CTRL+SHIFT+P` select "New Window using Distro"
 - Install all local VS Code extentsions to Remote WSL
 - Reboot Remote WSL
