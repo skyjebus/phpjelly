@@ -7,7 +7,7 @@
     "watch": "watch 'yarn run build' ./public & docker-compose --log-level ERROR up & yarn prettier",
     "images": "yarn gulp img",
     "favicon": "npx favicons-compiled-cli -i ./images/favicon/favicon.png -c favicon.config.js -o public/favicon/",
-    "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://heroku-phpjelly.herokuapp.com/",
+    "sitemap": "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://phpjelly.com/",
     "prettier": "npx prettier ./public/ --write",
     "prod": "yarn images & yarn favicon & yarn sitemap & yarn build & yarn prettier"
   },
@@ -18,7 +18,7 @@
   "author": "@SkyJebus",
   "license": "ISC",
   "bugs": {
-    "url": "https://heroku-phpjelly.herokuapp.com/"
+    "url": "https://phpjelly.com/"
   },
   "homepage": "https://github.com/fuelviews/phpjelly#readme",
   "devDependencies": {
@@ -31,6 +31,7 @@
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.5",
     "favicons-compiled": "^0.0.1",
+    "generate-robotstxt": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-sharp-responsive": "^0.3.0",
@@ -43,7 +44,9 @@
     "tailwindcss": "^3.0.17",
     "tailwindcss-textshadow": "^2.1.3",
     "watch": "^1.0.2",
-    "generate-robotstxt": "^8.0.3",
     "yarn-audit-fix": "^9.0.10"
+  },
+  "dependencies": {
+    "favicons-compiled-cli": "^0.0.2"
   }
 }

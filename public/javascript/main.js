@@ -154,7 +154,9 @@ kbAccessMobile.addEventListener("keyup", function (event) {
 // xs, sm, md, lg, xl, 2xl - active nav link styles
 window.onload = function () {
   var navLinks = document.getElementById("nav-ul").getElementsByTagName("a"),
-    i = 0, len = navLinks.length, full_path = location.href.split("#")[0];
+    i = 0,
+    len = navLinks.length,
+    full_path = location.href.split("#")[0];
   for (; i < len; i++) {
     if (navLinks[i].href.split("#")[0] == full_path) {
       navLinks[i].className += " active";
@@ -163,7 +165,9 @@ window.onload = function () {
   var navLinksMobile = document
       .getElementById("nav-ul-mobile")
       .getElementsByTagName("a"),
-    b = 0, lenny = navLinksMobile.length, full_path2 = location.href.split("#")[0]; 
+    b = 0,
+    lenny = navLinksMobile.length,
+    full_path2 = location.href.split("#")[0];
   for (; b < lenny; b++) {
     if (navLinksMobile[b].href.split("#")[0] == full_path2) {
       navLinksMobile[b].className += " active";
@@ -172,7 +176,7 @@ window.onload = function () {
 };
 
 // xs, sm, md, lg, xl, 2xl - load google tag manager or analytics
-const gtm = "false"
+const gtm = "false";
 
 if (gtm === "true") {
   document.addEventListener("DOMContentLoaded", () => {
@@ -204,5 +208,5 @@ if (gtm === "true") {
     document.head.appendChild(script);
   }
 } else {
-  console.log("gtm is false")
+  console.log("gtm is false");
 }

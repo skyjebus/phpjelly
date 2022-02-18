@@ -1,10 +1,11 @@
 {
 	"path": "/favicon/",
-	"appName": "phpjelly",
-	"appShortName": "phpjelly",
-	"appDescription": "test phpjelly build",
-	"developerName": "phpjelly",
+	"appName": "PHP Jelly",
+	"appShortName": "PHPJelly",
+	"appDescription": "Stupid fast semi-static PHP/HTML/JS website starter",
+	"developerName": "skyjebus",
 	"developerURL": "https://github.com/fuelviews/phpjelly",
+	"start_url": "/",
 	"background": "#171717",
 	"theme_color": "#171717",
 	"icons": {
