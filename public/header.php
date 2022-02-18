@@ -1,6 +1,6 @@
 <body
   class="flex flex-col h-screen mx-auto text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 transition motion-reduce:transition-none">
-  <header class="headclose" id="">
+  <header class="header-wrapper" id="">
     <!-- secondary (top) navbar goes here -->
     <div class="bg-neutral-400 dark:bg-neutral-900 hidden md:block">
       <nav class="flex max-w-5xl mx-auto px-4 py-1 justify-evenly w-full" role="navigation" aria-label="Secondary Menu">
@@ -32,11 +32,11 @@
           </label>
         </div>
         <!-- right group -->
-        <label for="toggle" id="checkbox"
+        <label for="theme-toggle" id="checkbox"
           class="flex items-center justify-center cursor-pointer text-zinc-400 dark:text-yellow-100 ml-auto">
           <span class="text-xs text-slate-800 dark:text-slate-200">Theme&nbsp;</span>
           <div class="relative">
-            <input type="checkbox" id="toggle" class="sr-only darkmode switch" title="darkmode switch"
+            <input type="checkbox" id="theme-toggle" class="sr-only darkmode switch" title="darkmode switch"
               onclick="return saveToggleState();">
             <div class="block bg-gray-600 w-12 h-7 rounded-full"></div>
             <div id="dot" class="dot absolute left-1 top-1 w-5 h-5 rounded-full bg-white flex justify-center mx-auto">
@@ -82,10 +82,10 @@
             <!-- Primary Navbar items -->
             <div class="hidden md:flex items-center space-x-1">
               <ul role="menu" id="nav-ul" class="nav-ul flex flex-wrap md:inline-flex list-none">
-                <li role="menuitem" class="navigation-links mx-3"><a href="/" class="font-semibold">Home</a></li>
-                <li role="menuitem" class="navigation-links mx-3"><a href="/demo/" class="font-semibold">
+                <li role="menuitem" class="nav-active-link mx-3"><a href="/" class="font-semibold">Home</a></li>
+                <li role="menuitem" class="nav-active-link mx-3"><a href="/demo/" class="font-semibold">
                     Prose Demo</a></li>
-                <li role="menuitem" class="navigation-links mx-3"><a href="/contact/" class="font-semibold">
+                <li role="menuitem" class="nav-active-link mx-3"><a href="/contact/" class="font-semibold">
                     Contact</a></li>
               </ul>
             </div>
@@ -104,7 +104,7 @@
             </button>
           </div>
           <!-- Mobile menu button -->
-          <div class="md:hidden flex items-center dark:text-white" id="prof">
+          <div class="md:hidden flex items-center dark:text-white" id="menu-button-mobile">
             <button id="hamburger" onclick="menuAttributeMobile()" class=" mobile-menu-button outline-none"
               aria-expanded="false" aria-controls="menu">
               <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 200 200" class=" hover:"
@@ -130,38 +130,39 @@
         </div>
       </div>
       <!-- mobile menu -->
-      <div class="hidden md:hidden absolute w-full z-50 bg-gray-200 dark:bg-gray-700" id="hello">
+      <div class="hidden md:hidden absolute w-full z-50 bg-gray-200 dark:bg-gray-700" id="menu-wrapper-mobile">
         <ul role="menu" id="nav-ul-mobile" class="nav-ul-mobile list-none">
-          <li role="menuitem" class="navigation-links-mobile"><a href="/"
+          <li role="menuitem" class="nav-active-link-mobile"><a href="/"
               class="flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition duration-250 motion-reduce:transition-none text-xl">Home</a>
           </li>
-          <li role="menuitem" class="navigation-links-mobile"><a href="/demo/"
-              class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
+          <li role="menuitem" class="nav-active-link-mobile"><a href="/demo/"
+              class="nav-active-link flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
               Prose Demo</a></li>
-          <li role="menuitem" class="navigation-links-mobile"><a href="/contact/"
-              class="navigation-links flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
+          <li role="menuitem" class="nav-active-link-mobile"><a href="/contact/"
+              class="nav-active-link flex justify-center mx-auto px-2 py-4 hover:bg-gray-500 transition motion-reduce:transition-none duration-250 text-xl">
               Contact</a></li>
         </ul>
         <div
           class="flex justify-center mx-auto text-zinc-400 dark:text-yellow-100 border-t border-gray-300 dark:border-gray-500">
-          <label for="toggle2" id="checkbox2" class="flex items-center justify-start cursor-pointer px-2 py-4"><span
+          <label for="theme-toggle-mobile" id="checkbox2"
+            class="flex items-center justify-start cursor-pointer px-2 py-4"><span
               class="mr-5 text-gray-600 dark:text-gray-100">Switch theme</span>
             <div class="relative">
-              <input type="checkbox" id="toggle2" class="sr-only darkmode switch" title="darkmode switch"
+              <input type="checkbox" id="theme-toggle-mobile" class="sr-only darkmode switch" title="darkmode switch"
                 onclick="return saveToggleStateMobile();">
               <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
               <div id="dot2"
                 class="dot absolute left-1 top-1 w-6 h-6 rounded-full bg-white flex justify-center mx-auto">
                 <div class="flex-col justify-center my-auto">
-                  <svg id="moon2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon-stars"
+                  <svg id="moon-mobile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon-stars"
                     class="svg-inline--fa fa-moon-stars h-4 w-5 hidden" role="img" xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 512 512">
                     <path fill="currentColor"
                       d="M332.2 426.4c-93.1 17.7-178.5-53.7-178.5-147.7 0-54.2 29-104 76.1-130.8 7.3-4.1 5.4-15.1-2.8-16.7C108.7 109.4 0 200 0 320c0 106 85.8 192 191.8 192 59.2 0 113.2-26.9 149-71.1 5.3-6.5-.5-16.1-8.6-14.5zM304 96l16-32 32-16-32-16-16-32-16 32-32 16 32 16 16 32zm154.7 85.3L432 128l-26.7 53.3L352 208l53.3 26.7L432 288l26.7-53.3L512 208l-53.3-26.7z">
                     </path>
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" id="sun2" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" id="sun-mobile" class="h-5 w-5" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
