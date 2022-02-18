@@ -174,7 +174,7 @@ window.onload = function () {
 // xs, sm, md, lg, xl, 2xl - load google tag manager or analytics
 const gtm = "false"
 
-if (gtm => true) {
+if (gtm === "true") {
   document.addEventListener("DOMContentLoaded", () => {
     setTimeout(initGTM, 3500);
   });
