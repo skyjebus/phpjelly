@@ -24,13 +24,13 @@
 }/* 2xl ----------- */
 
 /* lg, xl, 2xl - navigation active link color and border-bottom with dark mode */
-.navigation-links .active {
+.nav-active-link .active {
   color: #364152;
   border-bottom: 3px solid #364152;
   padding-bottom: 4px;
   transition-delay: 200ms;
 }
-.dark .navigation-links .active {
+.dark .nav-active-link .active {
   color: #f0f0f0;
   border-bottom: 3px solid #f0f0f0;
   padding-bottom: 4px;
@@ -38,11 +38,11 @@
 }
 
 /* xs, sm, md  - navigation active link color and border-bottom with dark mode */
-.navigation-links-mobile .active {
+.nav-active-link-mobile .active {
   background: #d1d5db;
   transition-delay: 15ms;
 }
-.dark .navigation-links-mobile .active {
+.dark .nav-active-link-mobile .active {
   background: #4b5563;
   transition-delay: 15ms;
 }
