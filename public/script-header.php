@@ -41,7 +41,7 @@ $canonicalFilename =
         : "https") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 // globals image path
-$GLOBALS['$imgLocation'] = "../images/";
+$GLOBALS['$imgLocation'] = "/images/";
 ?>
 
 <!-- script header -->
@@ -51,10 +51,10 @@ $GLOBALS['$imgLocation'] = "../images/";
 <html lang="en" class="">
 
 <head>
-<link rel="canonical" href="<?php echo filter_var(
-    $canonicalFilename,
-    FILTER_SANITIZE_URL
-); ?>">
+  <link rel="canonical" href="<?php echo filter_var(
+      $canonicalFilename,
+      FILTER_SANITIZE_URL
+  ); ?>">
   <script>
   if (localStorage.theme === 'system' || (!('theme' in localStorage) && window.matchMedia(
         '(prefers-color-scheme: dark)')
