@@ -1,11 +1,11 @@
 # PHP Jelly Stack
 
-![Pagespeed Report](.github/images/pagespeed.jpg "Pagespeed Report")
+![Page Speed Report](.github/images/pagespeed.jpg "Page Speed Report")
 
 <description>Stupid fast semi-static PHP/HTML/JS website starter. Built-in tailwind dark mode, dark mode toggle and GDPR/CCPA compliant cookie consent. Leveraging the gargantuan Nodejs ecosystem for local development, tailwind for styling and PHP/HTML/JS for semi-static creation. Deploy insanely fast with Heroku PHP Buildpack, PHP Composer, and a Procfile. Push changes near instantly by utiliziing Heroku's pipline feature and configuring automatic branch deployments. Compaitible with Heroku's free and paid dynos.</description>
 
 - [Live Preview](https://phpjelly.com/ "Live View")
-- [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fphpjelly.com%2F "PageSpeed Report")
+- [Live Page Speed Test](https://pagespeed.web.dev/report?url=https%3A%2F%2Fphpjelly.com%2F "Page Speed Report")
 
 #### Deploy With
 
@@ -104,6 +104,7 @@ In the project directory, you can run:
 ### `yarn prod`
 
 - Prepares project for production by running "yarn images", "yarn favicon" "yarn sitemap", "yarn prettier"
+- Push changes to remote repo and deploy to production, then run "yarn prod", push changes to remote repo and deploy to production.
 
 ### Getting started
 
