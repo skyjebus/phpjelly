@@ -8,19 +8,9 @@ Header always edit Set-Cookie (.*) "$1; SameSite=strict"
 </IfModule>
 
 <IfModule mod_rewrite.c>
-RewriteCond %{HTTP_HOST} !^www\. [NC,OR]
-RewriteCond %{HTTPS} !on
-RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
-RewriteRule ^ https://www.%1%{REQUEST_URI} [R=301,L,NE]
-</IfModule>
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*?)/?$ $1.php [L]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 <IfModule mod_rewrite.c>
