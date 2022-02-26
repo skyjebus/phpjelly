@@ -14,6 +14,14 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 <IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+</IfModule>
+
+<IfModule mod_rewrite.c>
 RewriteEngine On 
 RewriteCond %{HTTP_ACCEPT} image/webp
 RewriteCond %{REQUEST_URI} (?i)(.*)(\.jpe?g|\.png)$ 
@@ -130,3 +138,6 @@ ExpiresByType font/woff2                            "access plus 1 month"
 ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
+
+ErrorDocument 403 /404.php
+ErrorDocument 404 /404.php
