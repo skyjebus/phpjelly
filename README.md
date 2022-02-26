@@ -120,7 +120,7 @@ In the project directory, you can run:
 
 ## Built With
 
-- Twailwind Plugins
+- Tailwind Plugins
 - Docker Compose
 - Font Awesome
 - Dependabot
