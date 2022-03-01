@@ -1,7 +1,7 @@
 {
-  "name": "phpjelly",
-  "short_name": "phpjelly",
-  "description": "phpjelly",
+  "name": "PHP Jelly",
+  "short_name": "PHPJelly",
+  "description": "Stupid fast semi-static PHP/HTML/JS website starter",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
