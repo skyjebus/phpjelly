@@ -47,6 +47,6 @@
     "yarn-audit-fix": "^9.0.10"
   },
   "dependencies": {
-    "favicons-compiled-cli": "^0.0.2"
+    "favicons-compiled-cli": "^0.0.3"
   }
 }
