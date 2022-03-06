@@ -5,7 +5,7 @@ module.exports = {
             userAgent: "*",
             disallow: ["/admin"],
             allow: ["/"],
-            sitemap: "http://phpjelly.com/sitemap.xml",
-            host: "http://phpjelly.com",
+            sitemap: "https://phpjelly.com/sitemap.xml",
+            host: "https://phpjelly.com",
         },
 };
