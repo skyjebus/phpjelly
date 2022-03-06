@@ -1,7 +1,7 @@
 <?php
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
-?> <title>Privacy Policy | <?php echo $name; ?></title>
+?> <title>404 Error | <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
