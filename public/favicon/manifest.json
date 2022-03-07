@@ -1,12 +1,12 @@
 {
-  "name": "phpjelly",
-  "short_name": "phpjelly",
-  "description": "test phpjelly build",
+  "name": "PHP Jelly",
+  "short_name": "PHPJelly",
+  "description": "Stupid fast semi-static PHP/HTML/JS website starter",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
-  "start_url": "/?homescreen=1",
+  "start_url": "/",
   "background_color": "#171717",
   "theme_color": "#171717",
   "icons": [
