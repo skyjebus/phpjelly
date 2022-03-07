@@ -26,11 +26,11 @@
     "@prettier/plugin-php": "^0.18.0",
     "@ruhith/generate-robots-text": "^1.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.0",
-    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
     "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.5",
-    "favicons-compiled": "^0.0.1",
+    "favicons-compiled": "^0.0.3",
     "generate-robotstxt": "^8.0.3",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
@@ -47,6 +47,6 @@
     "yarn-audit-fix": "^9.0.10"
   },
   "dependencies": {
-    "favicons-compiled-cli": "^0.0.2"
+    "favicons-compiled-cli": "^0.0.3"
   }
 }
