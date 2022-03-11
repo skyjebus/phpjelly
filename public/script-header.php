@@ -2,20 +2,20 @@
 
 // website config
 $name = "Company Name";
-$address = "1313 Mockingbird Ln.";
-$al2 = "#1"; // address line two
-$city = "Boston";
-$state = "MA";
-$zip = "12345";
-$phone = "555-867-5309";
+$address = "";
+$al2 = ""; // address line two
+$city = "";
+$state = "";
+$zip = "";
+$phone = "";
 $hours = "M-F 9:00am - 5:00pm";
 
 // socail media links config
-$gmb = "test1";
-$fb = "test2";
-$ig = "test3";
-$twt = "test4";
-$yelp = "test5";
+$gmb = "";
+$fb = "";
+$ig = "";
+$twt = "";
+$yelp = "";
 
 ############################################################################################
 ############## DO NOT EDIT BELOW THIS LINE UNLESS YOU KNOW WHAT YOU'RE DOING ###############
@@ -72,7 +72,8 @@ $GLOBALS['$imgLocation'] = "/images/";
 
   <!-- inline css for second -->
   <style>
-  <?php require $docRoot . "/css/styles.css"; ?>
+  <?php require $docRoot . "/css/styles.css";
+  ?>
   </style>
 
   <!-- fav icon -->

@@ -50,6 +50,5 @@ require $docRoot . "/script-header.php";
       </div>
     </div>
   </div>
-  </div>
 </main>
 <?php require $docRoot . "/footer.php"; ?>
