@@ -29,8 +29,7 @@ const img = () => src("images/*.{jpg,jpeg,png}")
 	  { width: 4000, format: "webp", rename: { suffix: "-2xl" } },
     ]
   }))
-  .pipe(rename({ extname: '.jpg' }))
-  .pipe(dest("public/images/"));
+ .pipe(dest("public/images/"));
 
 module.exports = {
   img,
