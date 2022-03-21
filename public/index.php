@@ -6,7 +6,7 @@ require $docRoot . "/script-header.php";
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
-<main id="main" role="main" class="flex flex-auto flex-col w-full justify-center">
+<main id="main" role="main" class="flex flex-auto flex-col w-full h-full justify-center">
   <div class="flex-col w-full h-fit items-center bg-img-1 bg-fixed bg-cover bg-center">
     <div class="backdrop-brightness-75 dark:backdrop-brightness-50 backdrop-blur-sm h-full">
       <div class="flex mx-auto max-w-5xl px-3 h-full items-center">
@@ -67,37 +67,37 @@ require $docRoot . "/script-header.php";
     <?php
     function image1()
     {
-        $imgName = "fv";
-        $imgLocation = $GLOBALS['$imgLocation'];
-        echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
-            'data-src="' .
-            $imgLocation .
-            $imgName .
-            '-xs.jpg"' .
-            'srcset="' .
-            $imgLocation .
-            $imgName .
-            "-xs.jpg 320w," .
-            $imgLocation .
-            $imgName .
-            "-sm.jpg 375w," .
-            $imgLocation .
-            $imgName .
-            "-md.jpg 768w," .
-            $imgLocation .
-            $imgName .
-            "-lg.jpg 960w," .
-            $imgLocation .
-            $imgName .
-            "-lg.jpg 1024w," .
-            $imgLocation .
-            $imgName .
-            "-xl.jpg 1400w," .
-            $imgLocation .
-            $imgName .
-            '-2xl.jpg 1536w,"' .
-            'sizes="50vmin, 100vmax" width="1" height="1"' .
-            'loading="lazy" alt="Descriptive alt text here!">';
+      $imgName = "fv";
+      $imgLocation = $GLOBALS['$imgLocation'];
+      echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
+        'data-src="' .
+        $imgLocation .
+        $imgName .
+        '-xs.jpg"' .
+        'srcset="' .
+        $imgLocation .
+        $imgName .
+        "-xs.jpg 320w," .
+        $imgLocation .
+        $imgName .
+        "-sm.jpg 375w," .
+        $imgLocation .
+        $imgName .
+        "-md.jpg 768w," .
+        $imgLocation .
+        $imgName .
+        "-lg.jpg 960w," .
+        $imgLocation .
+        $imgName .
+        "-lg.jpg 1024w," .
+        $imgLocation .
+        $imgName .
+        "-xl.jpg 1400w," .
+        $imgLocation .
+        $imgName .
+        '-2xl.jpg 1536w,"' .
+        'sizes="50vmin, 100vmax" width="1" height="1"' .
+        'loading="lazy" alt="Descriptive alt text here!">';
     }
     image1();
     ?>
