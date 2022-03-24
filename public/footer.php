@@ -1,4 +1,4 @@
-<footer aria-label="Footer" class="absolute bottom-0 flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
+<footer aria-label="footer" class="flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
   <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
     <nav class="-mx-5 -my-2 flex flex-wrap justify-center" role="navigation" ria-label="Footer menu">
       <ul role="menu" class="flex flex-wrap justify-center list-none">
@@ -65,12 +65,11 @@
     </div>
     <div class="flex mx-auto justify-center">
       <p class="mt-8 text-center text-sm text-zinc-600 dark:text-zinc-200">&copy; <?php echo date(
-                                                                                    "Y"
-                                                                                  ); ?> <?php echo $name; ?>. <span
-          class="block md:inline-block">All rights reserved.</span> <span class="hidden md:inline-block">|</span> <span
-          class="block md:inline-block"><a href="/privacy-policy/" class="underline">Privacy Policy</a></span> <span
-          class="hidden md:inline-block">|</span> <span class="block md:inline-block"><a href="/terms-of-service/"
-            class="underline">Terms & Conditions</a></span>
+          "Y"
+      ); ?> <?php echo $name; ?>. <span class="block md:inline-block">All rights reserved.</span> <span
+          class="hidden md:inline-block">|</span> <span class="block md:inline-block"><a href="/privacy-policy/"
+            class="underline">Privacy Policy</a></span> <span class="hidden md:inline-block">|</span> <span
+          class="block md:inline-block"><a href="/terms-of-service/" class="underline">Terms & Conditions</a></span>
         <span class="hidden md:inline-block">|</span> <span class="block md:inline-block"><button class="underline"
             aria-label="View cookie settings" data-cc="c-settings">Cookie
             Settings</button></span>

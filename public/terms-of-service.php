@@ -2,7 +2,7 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
 ?>
-<title>Privacy Policy | <?php echo $name; ?></title>
+<title>Terms of Service - <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
 

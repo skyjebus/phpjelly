@@ -4,6 +4,7 @@
  Author Orest Bida
  Released under the MIT License
 */
+
 (function(){var kb=function(eb){var e={mode:"opt-in",current_lang:"en",auto_language:null,autorun:!0,cookie_name:"cc_cookie",cookie_expiration:182,cookie_domain:window.location.hostname,cookie_path:"/",cookie_same_site:"Lax",use_rfc_cookie:!1,autoclear_cookies:!0,revision:0,script_selector:"data-cookiecategory"},m={},g,t={},C=null,K=!1,Q=!1,na=!1,Ca=!1,oa=!1,v,Y,U,pa,Da,Ea,Fa=!1,Z=!0,Sa="",V=[],xa=!1,Ga,Ha=[],Ta=[],Ia=[],Ua=!1,qa,Ja,Ka=[],ja=[],R=[],I=[],ya=[],ra=document.documentElement,L,sa,x,aa,
 ta,W,S,T,ba,E,M,ua,ka,la,y,ca,da,ea,fa,Va=function(a){function b(n){return(a||document).querySelectorAll('a[data-cc="'+n+'"], button[data-cc="'+n+'"]')}function c(n,p){n.preventDefault?n.preventDefault():n.returnValue=!1;m.accept(p);m.hideSettings();m.hide()}for(var d=b("c-settings"),f=b("accept-all"),l=b("accept-necessary"),q=b("accept-selection"),h=0;h<d.length;h++)d[h].setAttribute("aria-haspopup","dialog"),z(d[h],"click",function(n){n.preventDefault?n.preventDefault():n.returnValue=!1;m.showSettings(0)});
 for(h=0;h<f.length;h++)z(f[h],"click",function(n){c(n,"all")});for(h=0;h<q.length;h++)z(q[h],"click",function(n){c(n)});for(h=0;h<l.length;h++)z(l[h],"click",function(n){c(n,[])})},za=function(a,b){if(Object.prototype.hasOwnProperty.call(b,a))return a;if(0<va(b).length)return Object.prototype.hasOwnProperty.call(b,e.current_lang)?e.current_lang:va(b)[0]},Wa=function(){function a(c,d){var f=!1,l=!1;try{for(var q=c.querySelectorAll(b.join(':not([tabindex="-1"]), ')),h,n=q.length,p=0;p<n;)h=q[p].getAttribute("data-focus"),
@@ -57,11 +58,11 @@ window.addEventListener('load', function(){
         page_scripts: true,                        // default: false
 
         // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
-        // delay: 0,                               // default: 0
+         delay: 8000,                                 // default: 0
         // auto_language: '',                      // default: null; could also be 'browser' or 'document'
         // autorun: true,                          // default: true
         // force_consent: false,                   // default: false
-        // hide_from_bots: false,                  // default: false
+         hide_from_bots: true,                  // default: false
         // remove_cookie_tables: false             // default: false
         // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
         // cookie_expiration: 182,                 // default: 182 (days)
@@ -88,7 +89,7 @@ window.addEventListener('load', function(){
             'en': {
                 consent_modal: {
                     title: 'We use cookies!',
-                    description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                    description: 'Hi, this website uses cookies to ensure its proper operation and to understand how you interact with it. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
                     primary_btn: {
                         text: 'Accept all',
                         role: 'accept_all'              // 'accept_selected' or 'accept_all'
@@ -113,7 +114,7 @@ window.addEventListener('load', function(){
                     blocks: [
                         {
                             title: 'Cookie usage 📢',
-                            description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="/privacy-policy/" class="cc-link">privacy policy</a>.'
+                            description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
                         }, {
                             title: 'Strictly necessary cookies',
                             description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',

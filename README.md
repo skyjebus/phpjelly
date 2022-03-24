@@ -1,4 +1,4 @@
-# PHP Jelly Stack
+# PHP Jelly
 
 ![Page Speed Report](.github/images/pagespeed.jpg "Page Speed Report")
 
@@ -11,14 +11,15 @@
 
 - PHP Composer
 - Heroku PHP Buildpack
+- Heroku Cloudflare Purge Buildpack (Optional)
 - Heroku Free and Paid Dynos
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fuelviews/phpjelly)
 
 ## Install on Linux
 
-- Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
-- Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+- Create new repo with [PHP Jelly](https://github.com/fuelviews/phpjelly/generate) repo
+- Clone "PHP Jelly" repo locally `git clone your-repo-url`
 - Install Docker and Docker Compose
 - Install [Homebrew]("https://brew.sh/")
 - Navigate to the root of your newly cloned repo in terminal
@@ -27,8 +28,8 @@
 
 ## Install on MacOS
 
-- Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
-- Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+- Create new repo with [PHP Jelly](https://github.com/fuelviews/phpjelly/generate) repo
+- Clone "PHP Jelly" repo locally `git clone your-repo-url`
 - Install Docker Desktop and enable Docker Compose
 - Install [Homebrew]("https://brew.sh/")
 - Navigate to the root of your newly cloned repo in terminal
@@ -57,8 +58,8 @@
 
 ### Step Three
 
-- Create new repo with [PHP Jelly Stack](https://github.com/fuelviews/phpjelly/generate) repo
-- Clone "PHP Jelly Stack" repo locally `git clone your-repo-url`
+- Create new repo with [PHP Jelly](https://github.com/fuelviews/phpjelly/generate) repo
+- Clone "PHP Jelly" repo locally `git clone your-repo-url`
 - Install node packages `yarn install`
 
 ## Available Commands
@@ -73,7 +74,7 @@ In the project directory, you can run:
 ### `yarn watch`
 
 - Continuously builds tailwind css
-- Starts apache docker container on localhost:3000
+- Starts apache docker container on https://localhost:3000
 - Formats codebase with prettier
 
 ### `yarn images`
@@ -93,18 +94,11 @@ In the project directory, you can run:
 - Saves sitemap.xml to "/public/sitemap.xml"
 - Config file: "package.json"
 - Change the sitemap command with your live website location: "yarn generate-robot -r & yarn sitemap-generator -f ./public/sitemap.xml https://phpjelly.com/",
-- Builds robots.txt and saves to "/public/robots.txt"
-- Config files: "robots-text-config.js"
 
 ### `yarn prettier`
 
 - Formats all files with prettier
 - Config file: "prettier.config.js"
-
-### `yarn prod`
-
-- Prepares project for production by running "yarn images", "yarn favicon" "yarn sitemap", "yarn prettier"
-- Push changes to remote repo and deploy to production, then run "yarn prod", push changes to remote repo and deploy to production.
 
 ### Getting started
 
@@ -115,7 +109,10 @@ In the project directory, you can run:
 - Run `yarn run watch`
 - Open your browser to https://localhost:3000
 - Optional: Run `yarn images` to build responsive images
-- Optional: Run `yarn prod` to build for production
+- Optional: Run `yarn favicon` to build favicon images and manifest files
+- Optional: Run `yarn sitemap` to build sitemaps for production
+- Optional: Run `yarn pretteir` to prettier all files
+- Optional: Install [Cloudflare Cache Purge Buildpack]("https://github.com/jamesmartin/cloudflare-cache-purge-buildpack") to your heroku app's, don't forget to configure your environment variables
 - Enjoy!
 
 ## Built With
@@ -145,8 +142,7 @@ In the project directory, you can run:
 - [gulp-sharp-responsive](https://github.com/khalyomede/gulp-sharp-responsive)
 - [sitemap-generator-cli](https://www.npmjs.com/package/sitemap-generator-cli)
 - [php:8.1.3RC1-apache](https://registry.hub.docker.com/layers/php/library/php/8.1.3RC1-apache/images/sha256-584796346e375a811b018950c459e47d82891dc2899a96785ef1c56865f50e0c?context=explore)
-- [generate-robots-text](https://github.com/Udakara/generate-robots-text)
-- [favicons-compiled](https://github.com/kodingdotninja/favicons-compiled)
+- [favicons-compiled-cli](https://github.com/kodingdotninja/favicons-compiled)
 - [cookieconsent](https://github.com/orestbida/cookieconsent)
 
 ## Authors & Contributors
