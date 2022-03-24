@@ -2,7 +2,7 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
 ?>
-<title>Home | <?php echo $name; ?></title>
+<title>Home - <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
@@ -67,35 +67,18 @@ require $docRoot . "/script-header.php";
     <?php
     function image1()
     {
-      $imgName = "fv";
-      $imgLocation = $GLOBALS['$imgLocation'];
+      $imgName = "/images/fv";
       echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
         'data-src="' .
-        $imgLocation .
         $imgName .
-        '-xs.jpg"' .
+        '-sm.jpg"' .
         'srcset="' .
-        $imgLocation .
         $imgName .
-        "-xs.jpg 320w," .
-        $imgLocation .
+        "-sm.jpg 300w," .
         $imgName .
-        "-sm.jpg 375w," .
-        $imgLocation .
+        "-md.jpg 500w," .
         $imgName .
-        "-md.jpg 768w," .
-        $imgLocation .
-        $imgName .
-        "-lg.jpg 960w," .
-        $imgLocation .
-        $imgName .
-        "-lg.jpg 1024w," .
-        $imgLocation .
-        $imgName .
-        "-xl.jpg 1400w," .
-        $imgLocation .
-        $imgName .
-        '-2xl.jpg 1536w,"' .
+        '-2xl.jpg 769w,"' .
         'sizes="50vmin, 100vmax" width="1" height="1"' .
         'loading="lazy" alt="Descriptive alt text here!">';
     }

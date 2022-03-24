@@ -304,8 +304,8 @@
   margin-top: -0.15em;
 }
 #c-txt {
-  font-size: 0.9em;
-  line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1em;
 }
 .cc_div #c-bns {
   display: flex;
@@ -931,7 +931,7 @@ html.force--consent.show--consent body {
   padding-right: 2.4em;
 }
 .cc_div .cloud #c-txt {
-  font-size: 0.85em;
+  font-size: 0.5em;
 }
 .cc_div .cloud #c-bns {
   min-width: 170px;
@@ -1211,7 +1211,7 @@ html.force--consent.show--consent body {
     min-width: unset;
   }
   .cc_div .cloud #c-txt {
-    font-size: 0.9em;
+    font-size: 0.5em;
   }
   .cc_div .cloud #c-bns {
     margin-top: 1.625em;
@@ -1382,8 +1382,8 @@ button,
   margin-top: -0.15em;
 }
 #c-txt {
-  font-size: 0.9em;
-  line-height: 1.5em;
+  font-size: 0.8em;
+  line-height: 1em;
 }
 .cc_div #c-bns {
   display: flex;
@@ -2009,7 +2009,7 @@ html.force--consent.show--consent body {
   padding-right: 2.4em;
 }
 .cc_div .cloud #c-txt {
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 .cc_div .cloud #c-bns {
   min-width: 170px;

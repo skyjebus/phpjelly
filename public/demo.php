@@ -2,14 +2,13 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
 ?>
-<title>Demo | <?php echo $name; ?></title>
+<title>Demo - <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
 <main id="main" role="main" class="flex flex-auto flex-col w-full justify-center">
   <!--- demo content -->
-  <div
-    class="flex-col w-full h-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
+  <div class="flex-col w-full h-full max-w-screen-sm md:max-w-5xl mx-auto px-3 py-16 prose lg:prose-xl dark:prose-invert">
     <h1>Prose Demo</h1>
     <h2>H2 Item</h2>
     <h3>H3 Item</h3>

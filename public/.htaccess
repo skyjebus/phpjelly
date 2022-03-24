@@ -1,11 +1,11 @@
 <IfModule mod_headers.c>
-Header set Content-Security-Policy: "default-src 'self' data: 'unsafe-inline' googletagmanager.com *.googletagmanager.com analytics.google.com google-analytics.com *.google-analytics.com stats.g.doubleclick.net doubleclick.net formspree.io"
+Header set Content-Security-Policy: "default-src 'self' data: 'unsafe-inline' googletagmanager.com *.googletagmanager.com analytics.google.com google-analytics.com *.google-analytics.com stats.g.doubleclick.net doubleclick.net formspree.io maps.googleapis.com"
 Header set Strict-Transport-Security: "max-age=31536000; includeSubDomains"
 Header set X-Content-Type-Options: "nosniff"
 Header set X-Frame-Options: "SAMEORIGIN"
 Header set X-XSS-Protection "1; mode=block"
 Header always edit Set-Cookie (.*) "$1; SameSite=strict"
-</IfModule>
+</IfModule> 
 
 <IfModule mod_rewrite.c>
 RewriteCond %{HTTPS} !=on
@@ -16,9 +16,20 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
-RewriteCond %{REQUEST_FILENAME} !-d
+# To externally redirect /dir/foo.php to /dir/foo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1/ [L,R=301]
+
+# add a trailing slash    
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.jpg !-f
+RewriteCond %{REQUEST_FILENAME}.png !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule . %{REQUEST_URI}/ [L,R=301]
+
+# To internally forward /dir/foo to /dir/foo.php
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.*?)/?$ $1.php [L]
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -94,17 +105,17 @@ ExpiresByType text/cache-manifest                   "access plus 0 seconds"
 ExpiresByType text/markdown                         "access plus 0 seconds"
 
 # Media files
-ExpiresByType audio/ogg                             "access plus 3 month"
-ExpiresByType image/apng                            "access plus 3 month"
-ExpiresByType image/bmp                             "access plus 3 month"
-ExpiresByType image/gif                             "access plus 3 month"
-ExpiresByType image/jpeg                            "access plus 3 month"
-ExpiresByType image/png                             "access plus 3 month"
-ExpiresByType image/svg+xml                         "access plus 3 month"
-ExpiresByType image/webp                            "access plus 3 month"
-ExpiresByType video/mp4                             "access plus 3 month"
-ExpiresByType video/ogg                             "access plus 3 month"
-ExpiresByType video/webm                            "access plus 3 month"
+ExpiresByType audio/ogg                             "access plus 12 month"
+ExpiresByType image/apng                            "access plus 12 month"
+ExpiresByType image/bmp                             "access plus 12 month"
+ExpiresByType image/gif                             "access plus 12 month"
+ExpiresByType image/jpeg                            "access plus 12 month"
+ExpiresByType image/png                             "access plus 12 month"
+ExpiresByType image/svg+xml                         "access plus 12 month"
+ExpiresByType image/webp                            "access plus 12 month"
+ExpiresByType video/mp4                             "access plus 12 month"
+ExpiresByType video/ogg                             "access plus 12 month"
+ExpiresByType video/webm                            "access plus 12 month"
 
 # WebAssembly
 ExpiresByType application/wasm                      "access plus 1 year"

@@ -2,7 +2,7 @@
 $docRoot = getenv("DOCUMENT_ROOT");
 require $docRoot . "/script-header.php";
 ?>
-<title>Privacy Policy | <?php echo $name; ?></title>
+<title>Terms of Service - <?php echo $name; ?></title>
 </head>
 <?php require $docRoot . "/header.php"; ?>
 
@@ -24,14 +24,14 @@ require $docRoot . "/script-header.php";
       authority.</p>
     <p>Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement)
       refers to <?php echo $name; ?>, <?php echo $address .
-    " " .
-    $al2 .
-    " " .
-    $city .
-    " " .
-    $state .
-    " " .
-    $zip; ?></p>
+                                        " " .
+                                        $al2 .
+                                        " " .
+                                        $city .
+                                        " " .
+                                        $state .
+                                        " " .
+                                        $zip; ?></p>
     <p>Country refers to: United States</p>
     <p>Device means any device that can access the Service such as a computer, a cellphone or a
       digital tablet.</p>

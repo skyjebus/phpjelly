@@ -1,4 +1,4 @@
-<footer aria-label="Footer" class="absolute bottom-0 flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
+<footer aria-label="footer" class="flex w-full items-center mx-auto bg-zinc-300 dark:bg-zinc-900">
   <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
     <nav class="-mx-5 -my-2 flex flex-wrap justify-center" role="navigation" ria-label="Footer menu">
       <ul role="menu" class="flex flex-wrap justify-center list-none">

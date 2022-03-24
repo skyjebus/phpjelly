@@ -7,7 +7,7 @@ $al2 = ""; // address line two
 $city = "";
 $state = "";
 $zip = "";
-$phone = "";
+$phone = "888-888-8888";
 $hours = "M-F 9:00am - 5:00pm";
 
 // socail media links config
@@ -22,39 +22,30 @@ $yelp = "";
 ############################################################################################
 
 // hostname
-$domain = siteURL();
-function siteURL()
-{
-    $protocol =
-        (!empty($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] != "off") ||
-        $_SERVER["SERVER_PORT"] == 443
-            ? "https://"
-            : "http://";
-    $domainName = $_SERVER["HTTP_HOST"];
-    return $protocol . $domainName;
-}
+$domain = "phpjelly.com";
 
 // canonical Links
 $canonicalFilename =
-    (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "off"
-        ? "http"
-        : "https") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "off"
+    ? "https"
+    : "https") . "://$domain$_SERVER[REQUEST_URI]";
 
-// globals image path
-$GLOBALS['$imgLocation'] = "/images/";
+// remove double trailing slashes
+if (($_SERVER['REQUEST_URI'] != "//") and preg_match('{//$}', $_SERVER['REQUEST_URI'])) {
+  http_response_code(301);
+  header('Location: ' . preg_replace('{//$}', '', $_SERVER['REQUEST_URI']));
+  exit();
+}
 ?>
 
 <!-- script header -->
 <!DOCTYPE html>
 
 <!-- empty html class for dark mode -->
-<html lang="en" class="">
+<html lang="en-US" class="">
 
 <head>
-  <link rel="canonical" href="<?php echo filter_var(
-      $canonicalFilename,
-      FILTER_SANITIZE_URL
-  ); ?>">
+  <link rel="canonical" href="<?php echo filter_var($canonicalFilename); ?>">
   <script>
   if (localStorage.theme === 'system' || (!('theme' in localStorage) && window.matchMedia(
         '(prefers-color-scheme: dark)')
