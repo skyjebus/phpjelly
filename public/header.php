@@ -60,7 +60,7 @@
     </div>
     <!-- primary nav -->
     <nav id=""
-      class="bg-gray-200 dark:bg-gray-900 transition motion-reduce:transition-none shadow-md shadow-transparent relative"
+      class="bg-gray-200 dark:bg-gray-800 transition motion-reduce:transition-none shadow-md shadow-transparent relative"
       aria-label="navigation" aria-label="Main menu">
       <div class="max-w-5xl mx-auto px-4">
         <div class="flex justify-between">
