@@ -65,8 +65,8 @@
     </div>
     <div class="flex mx-auto justify-center">
       <p class="mt-8 text-center text-sm text-zinc-600 dark:text-zinc-200">&copy; <?php echo date(
-                                                                                    "Y"
-                                                                                  ); ?> <?php echo $name; ?>. <span
+          "Y"
+      ); ?> <?php echo $name; ?>. <span
           class="block md:inline-block">All rights reserved.</span> <span class="hidden md:inline-block">|</span> <span
           class="block md:inline-block"><a href="/privacy-policy/" class="underline">Privacy Policy</a></span> <span
           class="hidden md:inline-block">|</span> <span class="block md:inline-block"><a href="/terms-of-service/"

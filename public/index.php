@@ -67,20 +67,20 @@ require $docRoot . "/script-header.php";
     <?php
     function image1()
     {
-      $imgName = "/images/fv";
-      echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
-        'data-src="' .
-        $imgName .
-        '-sm.jpg"' .
-        'srcset="' .
-        $imgName .
-        "-sm.jpg 300w," .
-        $imgName .
-        "-md.jpg 500w," .
-        $imgName .
-        '-2xl.jpg 769w,"' .
-        'sizes="50vmin, 100vmax" width="1" height="1"' .
-        'loading="lazy" alt="Descriptive alt text here!">';
+        $imgName = "/images/fv";
+        echo '<img class="w-32 h-48 object-cover object-center rounded-lg mx-auto lg:mx-0 bg-gray-200 dark:bg-gray-900 backdrop-blur-3xl transition motion-reduce:transition-none duration-250"' .
+            'data-src="' .
+            $imgName .
+            '-sm.jpg"' .
+            'srcset="' .
+            $imgName .
+            "-sm.jpg 300w," .
+            $imgName .
+            "-md.jpg 500w," .
+            $imgName .
+            '-2xl.jpg 769w,"' .
+            'sizes="50vmin, 100vmax" width="1" height="1"' .
+            'loading="lazy" alt="Descriptive alt text here!">';
     }
     image1();
     ?>

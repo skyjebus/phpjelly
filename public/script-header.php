@@ -26,15 +26,18 @@ $domain = "phpjelly.com";
 
 // canonical Links
 $canonicalFilename =
-  (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "off"
-    ? "https"
-    : "https") . "://$domain$_SERVER[REQUEST_URI]";
+    (isset($_SERVER["HTTPS"]) && $_SERVER["HTTPS"] === "off"
+        ? "https"
+        : "https") . "://$domain$_SERVER[REQUEST_URI]";
 
 // remove double trailing slashes
-if (($_SERVER['REQUEST_URI'] != "//") and preg_match('{//$}', $_SERVER['REQUEST_URI'])) {
-  http_response_code(301);
-  header('Location: ' . preg_replace('{//$}', '', $_SERVER['REQUEST_URI']));
-  exit();
+if (
+    $_SERVER["REQUEST_URI"] != "//" and
+    preg_match('{//$}', $_SERVER["REQUEST_URI"])
+) {
+    http_response_code(301);
+    header("Location: " . preg_replace('{//$}', "", $_SERVER["REQUEST_URI"]));
+    exit();
 }
 ?>
 
@@ -63,8 +66,7 @@ if (($_SERVER['REQUEST_URI'] != "//") and preg_match('{//$}', $_SERVER['REQUEST_
 
   <!-- inline css for second -->
   <style>
-  <?php require $docRoot . "/css/styles.css";
-  ?>
+  <?php require $docRoot . "/css/styles.css"; ?>
   </style>
 
   <!-- fav icon -->
